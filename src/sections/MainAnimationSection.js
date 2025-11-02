@@ -81,7 +81,7 @@ export default function MainAnimationSection() {
 			end: "+=" + winH,
 			animation: animationTimeline,
 			scrub: true,
-			markers: true,
+			// markers: true,
 		});
 
 		animationTimeline1
@@ -300,7 +300,7 @@ export default function MainAnimationSection() {
 			animation: animationTimeline1,
 			scrub: true,
 			pin: true,
-			markers: true,
+			// markers: true,
 		});
 
 		// Disable default camera controls on click
@@ -498,7 +498,10 @@ export default function MainAnimationSection() {
 									always says just one more!
 								</div>
 								<h2 className={`${styles.title_anima_circle} section_big_title`}>
-									<span>Sip it, share it, shoot it</span>
+									<span>
+										Sip it, share it,
+										<br /> shoot it
+									</span>
 								</h2>
 								<div className={styles.para2}>every sip is MIHO-licious.</div>
 							</div>

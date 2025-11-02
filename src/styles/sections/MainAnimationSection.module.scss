@@ -118,6 +118,7 @@
     .bottle_anima_section{
         width: 100vw;
         height: 100vh;
+        z-index: 2;
         position: relative;
         &::after{
             content: "";
@@ -158,7 +159,6 @@
                     // position: absolute;
                     width: 32vw;
                     height: 80vh;
-                    z-index: 1111;
                     transform: rotate(-15deg);
                     display: block;
                     overflow: hidden;
