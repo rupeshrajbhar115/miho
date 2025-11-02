@@ -15,7 +15,7 @@ import Link from "next/link";
 import styles from "@/styles/components/Header.module.scss";
 
 // IMAGES //
-import Arrow from "@/../public/img/icons/arrow.svg";
+import Logo from "@/../public/img/logo.svg";
 
 // DATA //
 
@@ -47,74 +47,53 @@ export default function Header() {
 					{/* Logo wrap */}
 					<Link href="/">
 						<div className={styles.image_wrap}>
-							{/* <Image src={Logo} alt="Logo" /> */}
-							LOGO
+							<img src={Logo.src} alt="Logo" className="img-responsive" />
 						</div>
 					</Link>
 
 					{/* Links Wrap */}
 					<div className={`${styles.links_wrap}`}>
-						{/* Add "has_dropdown" class if your link has dropdown */}
-						<div
-							className={`${styles.links} ${styles.has_dropdown} ${
-								openDropdown === "aboutUs" ? styles.dropdown_opened : ""
-							} dropdown`}
-							onClick={() => toggleDropdown("aboutUs")}
-						>
-							<div className={styles.link_title}>
-								<p>About Us</p>
-								<span className={styles.arrow_img}>
-									<Image src={Arrow} alt="Arrow" />
-								</span>
-							</div>
-							{/* Dropdown is opened when link is clicked */}
-							<div className={`${styles.dropdown_wrap}`}>
-								<Link href="">
-									<p className={styles.dropdown_links}>About 1</p>
-								</Link>
-								<Link href="">
-									<p className={styles.dropdown_links}>About 2</p>
-								</Link>
-								<Link href="">
-									<p className={styles.dropdown_links}>About 3</p>
-								</Link>
-							</div>
-						</div>
-						<div
-							className={`${styles.links} ${styles.has_dropdown} ${
-								openDropdown === "blogs" ? styles.dropdown_opened : ""
-							} dropdown`}
-							onClick={() => toggleDropdown("blogs")}
-						>
-							<div className={styles.link_title}>
-								<p>Blogs</p>
-								<span className={styles.arrow_img}>
-									<Image src={Arrow} alt="Arrow" />
-								</span>
-							</div>
-							{/* Dropdown is opened when link is clicked */}
-							<div className={`${styles.dropdown_wrap}`}>
-								<Link href="">
-									<p className={styles.dropdown_links}>Blog 1</p>
-								</Link>
-								<Link href="">
-									<p className={styles.dropdown_links}>Blog 2</p>
-								</Link>
-								<Link href="">
-									<p className={styles.dropdown_links}>Blog 3</p>
-								</Link>
-							</div>
-						</div>
 						<div className={styles.links}>
 							<Link href="">
-								<div className={styles.link_title}>Career</div>
+								<div className={`${styles.link_title} ${styles.active}`}>Home</div>
 							</Link>
 						</div>
 						<div className={styles.links}>
 							<Link href="">
-								<div className={styles.link_title}>Contact</div>
+								<div className={styles.link_title}>About Miho</div>
 							</Link>
 						</div>
+						<div className={styles.links}>
+							<Link href="">
+								<div className={styles.link_title}>Taste</div>
+							</Link>
+						</div>
+						<div className={styles.links}>
+							<Link href="">
+								<div className={styles.link_title}>Mihopedia</div>
+							</Link>
+						</div>
+						<div className={styles.links}>
+							<Link href="">
+								<div className={styles.link_title}>Events</div>
+							</Link>
+						</div>
+						<div className={styles.links}>
+							<Link href="">
+								<div className={styles.link_title}>Store Locator</div>
+							</Link>
+						</div>
+						<div className={styles.links}>
+							<Link href="">
+								<div className={styles.link_title}>Store Locator</div>
+							</Link>
+						</div>
+					</div>
+
+					<div className={`${styles.button_section}`}>
+						<a href="#" className="submitButton">
+							Order Online
+						</a>
 					</div>
 
 					{/* Hamburger icon visible in mobile only */}
