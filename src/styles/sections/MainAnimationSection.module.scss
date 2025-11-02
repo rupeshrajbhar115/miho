@@ -1,0 +1,329 @@
+@import "../helpers/helpers.scss";
+			
+.MainAnimationSection{
+    .banner_section{
+        height: 100vh;
+        padding: 100px 4vw;
+        position: relative;
+        .bannerVector4{
+            top: 150px;
+            right: 0;
+            position: absolute;
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.6;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url(../../../public/img/home/banner_bg.jpg);
+        }
+        .bannerWave{
+            left: 0;
+            z-index: 1;
+            width: 100%;
+            bottom: -50px;
+            position: absolute;
+        }
+        .banner{
+            display: flex;
+            .left_section{
+                width: 55%;
+                h2{
+                    color: #2B8B00;
+                    font-size: 185px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 145px;
+                    font-family: var(--font-braked-s-b);
+                }
+                p{
+                    width: 70%;
+                    font-size: 26px;
+                    line-height: 32px;
+                    font-weight: 400;
+                    color: #236F00;
+                    padding-top: 10px;
+                }
+            }
+            .right_section{
+                width: 45%;
+                height: calc(100vh - 200px);
+                position: relative;
+                .BannerLeaf{
+                    top: 50%;
+                    left: 50%;
+                    position: absolute;
+                    transform: translate(-50%, -50%);
+                }
+                .bannerVector1{
+                    top: 54%;
+                    left: -50px;
+                    position: absolute;
+                    transform: translateY(-50%);
+                }
+                .bannerVector2{
+                    left: -210px;
+                    bottom: -30px;
+                    position: absolute;
+                }
+                .bannerVector3{
+                    right: -80px;
+                    bottom: 0px;
+                    position: absolute;
+                }
+                .bottle{
+                    position: relative;
+                    .left_bottle{
+                        z-index: 11;
+                        model-viewer{
+                            // position: absolute;
+                            width: 30vw;
+                            height: 75vh;
+                            z-index: 1;
+                            transform: rotate(-15deg);
+                            display: block;
+                            overflow: hidden;
+                            pointer-events: auto;
+                        }
+                    }
+                    .RedBottle{
+                        left: 0;
+                        z-index: 1;
+                        top: -20px;
+                        position: absolute;
+                        @media (min-width: 1441px) and (max-width: 1920px) {
+                            top: 0;
+                        }
+                    }
+                    .GreenBottle{
+                        right: 0;
+                        z-index: 1;
+                        top: -20px;
+                        position: absolute;
+                        @media (min-width: 1441px) and (max-width: 1920px) {
+                            top: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .bottle_anima_section{
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.6;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url(../../../public/img/home/find_bg.png);
+        }
+        .anima_section{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            .title_section{
+                top: 20px;
+                left: 50%;
+                width: 100%;
+                overflow: hidden;
+                text-align: center;
+                position: absolute;
+                transform: translateX(-50%);
+                .title_anima{
+                    transform: translateY(100%);
+                }
+            }
+            .left_bottle{
+                z-index: 1;
+                model-viewer{
+                    // position: absolute;
+                    width: 32vw;
+                    height: 80vh;
+                    z-index: 1111;
+                    transform: rotate(-15deg);
+                    display: block;
+                    overflow: hidden;
+                    pointer-events: auto;
+                }
+            }
+            .RedBottle{
+                width: 177px;
+                z-index: 1;
+                margin-top: -46px;
+                position: relative;
+            }
+            .vector_anima_section{
+                .AnimaVector1{
+                    opacity: 0;
+                    bottom: 0;
+                    left: 50%;
+                    position: absolute;
+                    transform: translate(-50%, -50%);
+                }
+                .AnimaVector2{
+                    opacity: 0;
+                    left: 50%;
+                    z-index: 0;
+                    bottom: 0;
+                    position: absolute;
+                    transform: translate(-50%, -50%);
+                }
+                .AnimaVector3{
+                    opacity: 0;
+                    z-index: 0;
+                    bottom: 0%;
+                    left: 50%;
+                    position: absolute;
+                    transform: translate(-50%, -50%);
+                }
+                .AnimaVector4{
+                    opacity: 0;
+                    bottom: 0%;
+                    left: 50%;
+                    position: absolute;
+                    transform: translate(-50%, -50%);
+                }
+                .AnimaVector5{
+                    opacity: 0;
+                    bottom: 0%;
+                    left: 50%;
+                    position: absolute;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+        .circle_anima{
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            align-items: center;
+            justify-content: center;
+            transform: translate(-50%, -50%);
+            .main_circle{
+                width: 100%;
+                height: 100%;
+                border-radius: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .AnimaCircle{
+                    opacity: 0;
+                    transform: scale(0.15);
+                }
+            }
+            .LeftHeand{
+                top: 50%;
+                left: -55%;
+                z-index: 1;
+                position: absolute;
+                transform: translateY(-50%);
+            }
+            .RightHeand{
+                top: 50%;
+                z-index: 1;
+                right: -55%;
+                position: absolute;
+                transform: translateY(-50%); 
+            } 
+        }
+
+        .heandTextAnima{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            transform: translate(-50%, -50%);
+            .text_section{
+                width: 700px;
+                .desc{
+                    font-size: 24px;
+                    line-height: 32px;
+                    font-weight: 600;
+                    color: #236F00;
+                    text-align: center;
+                    overflow: hidden;
+                    position: relative;
+                    .para{
+                        position: relative;
+                        transform: translateY(-100%);
+                    }
+                }
+                .desc_section_wrapper{
+                    overflow: hidden;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    .desc_section{
+                        text-align: center;
+                        transform: translateY(100%);
+                        .para2{
+                            font-size: 24px;
+                            line-height: 32px;
+                            font-weight: 600;
+                            color: #236F00;
+                            text-align: center;
+                            overflow: hidden;
+                            position: relative;
+                        }
+                    }
+                }
+                .img_section_animation{
+                    overflow: hidden;
+                    .img_section{
+                        display: flex;
+                        padding-top: 100px;
+                        position: relative;
+                        transform: translateY(100%);
+                        justify-content: space-between;
+                        .one{
+                            padding-top: 20px;
+                        }
+                        .three{
+                            margin-top: -70px;
+                        }
+                        .SmallCircles1{
+                            top: 100px;
+                            left: 150px;
+                            position: absolute;
+                        }
+                        .SmallCircles2{
+                            bottom: 60px;
+                            left: 75%;
+                            position: absolute;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}
