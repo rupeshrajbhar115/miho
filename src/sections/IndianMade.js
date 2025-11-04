@@ -1,10 +1,14 @@
+/* eslint-disable @next/next/no-img-element */
 // MODULES //
+import { useEffect } from "react";
 
 // COMPONENTS //
 
 // SECTIONS //
 
 // PLUGINS //
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 // UTILS //
 
@@ -28,6 +32,114 @@ import Flovare4 from "../../public/img/home/flovare4.png";
 
 /** IndianMade Section */
 export default function IndianMade() {
+	useEffect(() => {
+		gsap.registerPlugin(ScrollTrigger);
+		const winH = window.innerHeight;
+		const animationTimeline = gsap.timeline();
+
+		animationTimeline
+			.to(
+				`.${styles.Flovare1}`,
+				{
+					scale: "1",
+				},
+				"1st"
+			)
+			.to(
+				`.${styles.Flovare2}`,
+				{
+					scale: "1",
+				},
+				"1st"
+			)
+			.to(
+				`.${styles.Flovare3}`,
+				{
+					scale: "1",
+				},
+				"1st"
+			)
+			.to(
+				`.${styles.Mood}`,
+				{
+					scale: "1",
+				},
+				"1st"
+			)
+			.to(
+				`.${styles.Flovare4}`,
+				{
+					scale: "1",
+				},
+				"1st"
+			)
+			.to(
+				`.${styles.Leaf}`,
+				{
+					right: "0",
+				},
+				"1st"
+			)
+			.to(
+				`.${styles.LeftLine}`,
+				{
+					left: "0",
+				},
+				"1st"
+			)
+			.to(
+				`.${styles.RightLine}`,
+				{
+					right: "0",
+				},
+				"1st"
+			)
+			.to(
+				`.${styles.bottom_img}`,
+				{
+					transform: "translateY(0%)",
+				},
+				"1st"
+			)
+			.to(
+				`.${styles.one} h2`,
+				{
+					transform: "translateY(0%)",
+				},
+				"1st"
+			)
+			.to(
+				`.${styles.two} h2`,
+				{
+					transform: "translateY(0%)",
+				},
+				"1st"
+			)
+			.to(
+				`.${styles.three} h2`,
+				{
+					transform: "translateY(0%)",
+				},
+				"1st"
+			)
+			.to(
+				`.${styles.para_data} p`,
+				{
+					transform: "translateY(0%)",
+				},
+				"1st"
+			);
+
+		// Attach ScrollTrigger
+		ScrollTrigger.create({
+			trigger: `.${styles.IndianMade}`,
+			start: "35% bottom",
+			end: "+=" + winH,
+			animation: animationTimeline,
+			scrub: true,
+			// markers: true,
+		});
+	}, []);
 	return (
 		<section className={styles.IndianMade}>
 			<img
@@ -93,9 +205,15 @@ export default function IndianMade() {
 						</h2>
 					</div>
 					<div className={styles.para_data}>
-						MiHO brings together the cool of Korea and the spirit of India. Born out
-						of a love for culture, friendship, and feel-good fun, MiHO is a home-grown
-						rice wine that flips the script on how we drink.
+						<p>
+							MIHO blends the heart of India with the soul of Korean culture. Born out
+							of a love for culture, friendship, and feel-good fun, it’s drink that
+							flips the script. Smooth and full of flavour, MIHO is designed for those
+							who crave style without excess. We’re not chasing wild nights; we’re
+							embracing mellow vibes. Stylish, inclusive, and totally unpretentious —
+							MIHO Soju is for those who believe life’s best moments are the ones you
+							can remember.
+						</p>
 					</div>
 				</div>
 			</div>

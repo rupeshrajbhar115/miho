@@ -7,9 +7,12 @@
 		position: relative;
 		.GreenWaveTop{
 			left: 0;
-			top: -80px;
+			top: -77px;
 			width: 100%;
 			position: absolute;
+			 @media (min-width: 1441px) and (max-width: 1920px) {
+				top: -88px;
+			}
 		}
 		&::after{
 			content: "";
@@ -431,6 +434,14 @@
 						width: 100%;
 						border-radius: 18px;
 					}
+				}
+				h6{
+					color: #236F00;
+					font-size: 24px;
+					font-style: normal;
+					font-weight: 500;
+					line-height: 32px;
+					padding-bottom: 10px;
 				}
 			}
 			.data_section{

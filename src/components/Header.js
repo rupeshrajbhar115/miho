@@ -83,18 +83,13 @@ export default function Header() {
 								<div className={styles.link_title}>Store Locator</div>
 							</Link>
 						</div>
-						<div className={styles.links}>
-							<Link href="">
-								<div className={styles.link_title}>Store Locator</div>
-							</Link>
-						</div>
 					</div>
 
-					<div className={`${styles.button_section}`}>
+					{/* <div className={`${styles.button_section}`}>
 						<a href="#" className="submitButton">
 							Order Online
 						</a>
-					</div>
+					</div> */}
 
 					{/* Hamburger icon visible in mobile only */}
 					<div className={styles.hamburger_icon} onClick={toggleSidebar}>

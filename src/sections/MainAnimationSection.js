@@ -138,7 +138,7 @@ export default function MainAnimationSection() {
 			.to(
 				".left_bottle_anima",
 				{
-					top: "50%",
+					top: "54%",
 					left: "50%",
 				},
 				"1st"
@@ -275,7 +275,7 @@ export default function MainAnimationSection() {
 			.to(
 				`.${styles.AnimaCircle}`,
 				{
-					opacity: "1",
+					transform: "scale(0.15)",
 				},
 				"2nd"
 			)
@@ -315,7 +315,7 @@ export default function MainAnimationSection() {
 				`.${styles.LeftHeand}`,
 				{
 					duration: 1,
-					left: "-20%",
+					left: "-25%",
 				},
 				"4th"
 			)
@@ -323,7 +323,7 @@ export default function MainAnimationSection() {
 				`.${styles.RightHeand}`,
 				{
 					duration: 1,
-					right: "-20%",
+					right: "-25%",
 				},
 				"4th"
 			)
@@ -415,12 +415,12 @@ export default function MainAnimationSection() {
 				<div className={styles.banner}>
 					<div className={styles.left_section}>
 						<div className={styles.banner_title}>
-							<h2>Flavour Every Emotion</h2>
+							<h2>Flavour Every Emotion.</h2>
 						</div>
 						<div className={styles.banner_desc}>
 							<p>
-								A spirit inspired by K-culture and crafted for young India — light,
-								playful, and made for every MiHO-ment.
+								MIHO, the first Indian-Crafted Soju, for young at heart. Light, playful,
+								and made for every MIHO-ment.
 							</p>
 						</div>
 					</div>
@@ -558,18 +558,20 @@ export default function MainAnimationSection() {
 					<div className={styles.text_section}>
 						<div className={styles.desc}>
 							<div className={styles.para}>
-								MiHO is your chill in the chaos — the green bottle that turns every
-								hangout into a story. Inspired by the Korean way of drinking, it’s all
-								about shared laughs, silly games, late-night chats, and that one friend
-								who always says just one more!
+								MIHO is your chill in the chaos — the bottle that turns every hangout
+								into a story. It&lsquo;s not about drinking hard; it&lsquo;s about
+								living light — it&lsquo;s all about shared laughs, fun games, late-night
+								gossip, and that one friend who always says &lsquo;just one more!&lsquo;
+								MIHO celebrates playful connect sessions over binges. Sip it, share it,
+								shoot it — every sip is MIHO-licious.
 							</div>
 						</div>
 						<div className={styles.desc_section_wrapper}>
 							<div className={styles.desc_section}>
 								<div className={styles.para2}>
-									It’s not about drinking hard; it’s about living light — it’s all about
-									shared laughs, fun games, late-night gossip, and that one friend who
-									always says just one more!
+									It&lsquo;s not about drinking hard; it&lsquo;s about living light —
+									it&lsquo;s all about shared laughs, fun games, late-night gossip, and
+									that one friend who always says just one more!
 								</div>
 								<h2 className={`${styles.title_anima_circle} section_big_title`}>
 									<span>

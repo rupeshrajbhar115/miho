@@ -26,6 +26,7 @@ import {
 	Autoplay,
 	Pagination,
 } from "swiper/modules";
+import ScrollOut from "scroll-out";
 
 // UTILS //
 
@@ -84,11 +85,15 @@ export default function HomePage() {
 		};
 
 		resultsBox.addEventListener("wheel", handleWheel, { passive: false });
+		ScrollOut({
+			once: false,
+		});
 
 		return () => {
 			resultsBox.removeEventListener("wheel", handleWheel);
 		};
 	}, []);
+
 	/** find locationsData */
 	const locationsData = [
 		{
@@ -279,21 +284,21 @@ export default function HomePage() {
 						className={`${styles.GreenWaveTop} img-responsive`}
 					/>
 					<div className="container">
-						<div className={`${styles.left_right_section}`}>
+						<div className={`${styles.left_right_section} toTop`} data-scroll>
 							<div className={`${styles.left_section}`}>
 								<h2 className="section_big_title">
 									<span>Not soju.</span>
 									<br />
 									<span>Just MiHO.</span>
 								</h2>
-								<p>Your drink, your vibe, your MiHO-ment.</p>
+								<p>Every bottle opens a story worth sharing.</p>
 								<img
 									src={Fire.src}
 									alt="fire"
 									className={`${styles.fire} img-responsive`}
 								/>
 							</div>
-							<div className={`${styles.right_section}`}>
+							<div className={`${styles.right_section} toTop`} data-scroll>
 								<div className={styles.navButtons}>
 									<div
 										className={styles.prevBtn}
@@ -394,8 +399,10 @@ export default function HomePage() {
 					<div className="container">
 						<div className={`${styles.miho_mihopedia_section}`}>
 							<div className={`${styles.mihopedia}`}>
-								<h2 className="section_big_title">Mihopedia</h2>
-								<div className={`${styles.slider_section}`}>
+								<h2 className="section_big_title toTop" data-scroll>
+									Mihopedia
+								</h2>
+								<div className={`${styles.slider_section} toTop`} data-scroll>
 									{/* Custom Navigation Buttons */}
 									<div className={styles.navButtons}>
 										<div
@@ -497,8 +504,10 @@ export default function HomePage() {
 									</Swiper>
 								</div>
 							</div>
-							<h2 className="section_big_title">Miho Events</h2>
-							<div className={`${styles.miho_events}`}>
+							<h2 className="section_big_title toTop" data-scroll>
+								Miho Events
+							</h2>
+							<div className={`${styles.miho_events} toTop`} data-scroll>
 								<div className="custom-progressbar"></div>
 
 								{/* Main Slider */}
@@ -639,10 +648,13 @@ export default function HomePage() {
 				<section className={`${styles.fing_faq_section}`}>
 					<div className="container">
 						<div className={styles.find_section}>
-							<div className={styles.img_section}>
+							<div className={`${styles.img_section} toTop`} data-scroll>
 								<h2 className="section_big_title">
 									<span>Find Your MiHO.</span>
 								</h2>
+								<h6 className="toTop" data-scroll>
+									Everything About MIHO Soju” (MIHOw)
+								</h6>
 								<div className={styles.find_img}>
 									<img
 										src={FindImage.src}
@@ -651,7 +663,7 @@ export default function HomePage() {
 									/>
 								</div>
 							</div>
-							<div className={styles.data_section}>
+							<div className={`${styles.data_section} toTop`} data-scroll>
 								<div className={styles.locationSection}>
 									<div className={styles.searchBar}>
 										<select
@@ -684,7 +696,7 @@ export default function HomePage() {
 								</div>
 							</div>
 						</div>
-						<div className={`${styles.faq_items}`}>
+						<div className={`${styles.faq_items} toTop`} data-scroll>
 							<div className={styles.title_moji}>
 								<div className={styles.title}>
 									<h2 className="section_big_title">Faq’s</h2>
@@ -694,7 +706,7 @@ export default function HomePage() {
 								</div>
 							</div>
 							<div className={`${styles.faq_desc}`}>
-								<p>Lorem ipsum dolor sit amet consectetur adipiscing</p>
+								<p>Everything About MIHO Soju” (MIHOw)</p>
 								<a href="#" className="submitButton">
 									Know More
 								</a>
@@ -705,7 +717,7 @@ export default function HomePage() {
 				<section className={`${styles.connect_section}`}>
 					<div className="container">
 						<div className={`${styles.connect}`}>
-							<div className={`${styles.connect_info}`}>
+							<div className={`${styles.connect_info} toTop`} data-scroll>
 								<h2 className="section_title">Connect with us</h2>
 								<ul>
 									<li>
@@ -728,7 +740,7 @@ export default function HomePage() {
 									</li>
 								</ul>
 							</div>
-							<div className={`${styles.connect_form}`}>
+							<div className={`${styles.connect_form} toTop`} data-scroll>
 								<h2 className="section_title">Send a message</h2>
 
 								<form className={styles.form} onSubmit={handleSubmit(onSubmit)}>

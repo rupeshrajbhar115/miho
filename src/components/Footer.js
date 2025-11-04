@@ -23,7 +23,7 @@ import Link from "../../public/img/in.svg";
 /** Footer Component */
 export default function Footer() {
 	return (
-		<footer className={`${styles.main_footer}`}>
+		<footer className={`${styles.main_footer} toTop`} data-scroll>
 			<div className="container">
 				<div className={`${styles.footer_section}`}>
 					<p>© {new Date().getFullYear()} MIHO</p>
