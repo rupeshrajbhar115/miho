@@ -52,6 +52,66 @@ export default function MainAnimationSection() {
 		const winH = window.innerHeight;
 		const animationTimeline = gsap.timeline();
 		const animationTimeline1 = gsap.timeline();
+		const bannerTimeline = gsap.timeline({});
+
+		bannerTimeline
+			.to(
+				`.${styles.BannerLeaf}`,
+				{
+					opacity: "1",
+					delay: "0.4",
+					duration: "1",
+				},
+				"1st"
+			)
+			.to(
+				`.${styles.bannerVector1}`,
+				{
+					scale: "1",
+					delay: "0.4",
+				},
+				"1st"
+			)
+			.to(
+				`.${styles.bannerVector2}`,
+				{
+					scale: "1",
+					delay: "0.4",
+				},
+				"1st"
+			)
+			.to(
+				`.${styles.bannerVector3}`,
+				{
+					scale: "1",
+					delay: "0.4",
+				},
+				"1st"
+			)
+			.to(
+				`.${styles.bannerVector4}`,
+				{
+					scale: "1",
+					delay: "0.4",
+				},
+				"1st"
+			)
+			.to(
+				`.${styles.banner_title} h2`,
+				{
+					duration: 1,
+					y: "0",
+				},
+				"1st"
+			)
+			.to(
+				`.${styles.banner_desc} p`,
+				{
+					y: "0",
+					duration: 1,
+				},
+				"1st"
+			);
 
 		animationTimeline
 			.fromTo(
@@ -344,11 +404,15 @@ export default function MainAnimationSection() {
 				/>
 				<div className={styles.banner}>
 					<div className={styles.left_section}>
-						<h2>Flavour Every Emotion</h2>
-						<p>
-							A spirit inspired by K-culture and crafted for young India — light,
-							playful, and made for every MiHO-ment.
-						</p>
+						<div className={styles.banner_title}>
+							<h2>Flavour Every Emotion</h2>
+						</div>
+						<div className={styles.banner_desc}>
+							<p>
+								A spirit inspired by K-culture and crafted for young India — light,
+								playful, and made for every MiHO-ment.
+							</p>
+						</div>
 					</div>
 					<div className={styles.right_section}>
 						<img
