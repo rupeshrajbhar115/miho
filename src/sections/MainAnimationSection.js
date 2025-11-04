@@ -117,10 +117,20 @@ export default function MainAnimationSection() {
 			.fromTo(
 				".left_bottle_anima model-viewer",
 				{
-					cameraOrbit: "185deg 0 2m",
+					cameraOrbit: "165deg 0 2m",
 				},
 				{
 					rotate: "0",
+					cameraOrbit: "545deg 0 2m",
+				},
+				"1st"
+			)
+			.fromTo(
+				".GreenBottle model-viewer",
+				{
+					cameraOrbit: "165deg 0 2m",
+				},
+				{
 					cameraOrbit: "550deg 0 2m",
 				},
 				"1st"
@@ -436,10 +446,10 @@ export default function MainAnimationSection() {
 							className={`${styles.bannerVector3} img-responsive`}
 						/>
 						<div className={styles.bottle}>
-							{/* <div className={`${styles.left_bottle} left_bottle_anima`}>
+							<div className={`${styles.GreenBottle} GreenBottle`}>
 								<model-viewer
 									ref={modelRef}
-									src="/img/3d/BerryBliss.glb"
+									src="/img/3d/SunDaze.glb"
 									alt="3D Bottle"
 									ar-modes="webxr scene-viewer quick-look"
 									camera-controls
@@ -448,17 +458,17 @@ export default function MainAnimationSection() {
 									disable-zoom
 									interaction-prompt="none"
 								></model-viewer>
-							</div> */}
+							</div>
 							{/* <img
 								src={RedBottle.src}
 								alt="image"
 								className={`${styles.RedBottle} img-responsive`}
 							/> */}
-							<img
+							{/* <img
 								src={GreenBottle.src}
 								alt="image"
 								className={`${styles.GreenBottle} img-responsive`}
-							/>
+							/> */}
 						</div>
 					</div>
 				</div>

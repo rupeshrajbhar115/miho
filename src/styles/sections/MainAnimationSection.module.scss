@@ -114,10 +114,21 @@
                         }
                     }
                     .GreenBottle{
-                        right: 0;
+                        right: -40px;
                         z-index: 1;
                         top: -20px;
                         position: absolute;
+                        transform: rotate(35deg);
+                        model-viewer{
+                            // position: absolute;
+                            width: 30vw;
+                            height: 75vh;
+                            z-index: 1;
+                            transform: rotate(-15deg);
+                            display: block;
+                            overflow: hidden;
+                            pointer-events: auto;
+                        }
                         @media (min-width: 1441px) and (max-width: 1920px) {
                             top: 0;
                         }
