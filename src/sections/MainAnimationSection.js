@@ -48,6 +48,41 @@ export default function MainAnimationSection() {
 	const modelRef = useRef(null);
 
 	useEffect(() => {
+		const model = modelRef.current;
+
+		if (model) {
+			/** Disable all interactions on the model-viewer */
+			const disableInteractions = (e) => {
+				e.preventDefault();
+				e.stopPropagation();
+			};
+
+			model.addEventListener("click", disableInteractions);
+			model.addEventListener("mousedown", disableInteractions);
+			model.addEventListener("mouseup", disableInteractions);
+			model.addEventListener("touchstart", disableInteractions);
+			model.addEventListener("touchmove", disableInteractions);
+			model.addEventListener("touchend", disableInteractions);
+			model.addEventListener("wheel", disableInteractions);
+
+			// Optional: also disable pointer events via CSS
+			model.style.pointerEvents = "none";
+
+			// Cleanup when unmounted
+			return () => {
+				ScrollTrigger.getAll().forEach((t) => t.kill());
+				model.removeEventListener("click", disableInteractions);
+				model.removeEventListener("mousedown", disableInteractions);
+				model.removeEventListener("mouseup", disableInteractions);
+				model.removeEventListener("touchstart", disableInteractions);
+				model.removeEventListener("touchmove", disableInteractions);
+				model.removeEventListener("touchend", disableInteractions);
+				model.removeEventListener("wheel", disableInteractions);
+			};
+		}
+	}, []);
+
+	useEffect(() => {
 		gsap.registerPlugin(ScrollTrigger);
 		const winH = window.innerHeight;
 		const animationTimeline = gsap.timeline();
@@ -158,7 +193,7 @@ export default function MainAnimationSection() {
 			.to(
 				`.${styles.title_anima}`,
 				{
-					duration: 1,
+					// duration: 1,
 					transform: "translateY(0%)",
 				},
 				"1st"
@@ -166,7 +201,7 @@ export default function MainAnimationSection() {
 			.to(
 				`.${styles.AnimaVector1}`,
 				{
-					duration: 1,
+					// duration: 1,
 					left: "35%",
 					opacity: "1",
 					bottom: "40%",
@@ -176,7 +211,7 @@ export default function MainAnimationSection() {
 			.to(
 				`.${styles.AnimaVector2}`,
 				{
-					duration: 1,
+					// duration: 1,
 					left: "42%",
 					opacity: "1",
 					bottom: "5%",
@@ -186,7 +221,7 @@ export default function MainAnimationSection() {
 			.to(
 				`.${styles.AnimaVector3}`,
 				{
-					duration: 1,
+					// duration: 1,
 					left: "55%",
 					opacity: "1",
 					bottom: "10%",
@@ -196,7 +231,7 @@ export default function MainAnimationSection() {
 			.to(
 				`.${styles.AnimaVector4}`,
 				{
-					duration: 1,
+					// duration: 1,
 					left: "67%",
 					opacity: "1",
 					bottom: "32%",
@@ -206,7 +241,7 @@ export default function MainAnimationSection() {
 			.to(
 				`.${styles.AnimaVector5}`,
 				{
-					duration: 1,
+					// duration: 1,
 					left: "65%",
 					opacity: "1",
 					bottom: "43%",
@@ -216,7 +251,7 @@ export default function MainAnimationSection() {
 			.to(
 				`.${styles.title_anima}`,
 				{
-					duration: 1,
+					// duration: 1,
 					opacity: "0",
 					transform: "translateY(100%)",
 				},
@@ -225,7 +260,7 @@ export default function MainAnimationSection() {
 			.to(
 				`.${styles.AnimaVector1}`,
 				{
-					duration: 1,
+					// duration: 1,
 					left: "50%",
 					opacity: "0",
 					bottom: "0%",
@@ -235,7 +270,7 @@ export default function MainAnimationSection() {
 			.to(
 				`.${styles.AnimaVector2}`,
 				{
-					duration: 1,
+					// duration: 1,
 					left: "50%",
 					opacity: "0",
 					bottom: "0%",
@@ -245,7 +280,7 @@ export default function MainAnimationSection() {
 			.to(
 				`.${styles.AnimaVector3}`,
 				{
-					duration: 1,
+					// duration: 1,
 					left: "50%",
 					opacity: "0",
 					bottom: "0%",
@@ -255,7 +290,7 @@ export default function MainAnimationSection() {
 			.to(
 				`.${styles.AnimaVector4}`,
 				{
-					duration: 1,
+					// duration: 1,
 					left: "50%",
 					opacity: "0",
 					bottom: "0%",
@@ -265,24 +300,23 @@ export default function MainAnimationSection() {
 			.to(
 				`.${styles.AnimaVector5}`,
 				{
-					duration: 1,
+					// duration: 1,
 					left: "50%",
 					opacity: "0",
 					bottom: "0%",
 				},
 				"2nd"
 			)
-			.to(
-				`.${styles.AnimaCircle}`,
-				{
-					transform: "scale(0.15)",
-				},
-				"2nd"
-			)
+			// .to(
+			// 	`.${styles.AnimaCircle}`,
+			// 	{
+			// 		transform: "scale(0.15)",
+			// 	},
+			// 	"2nd"
+			// )
 			.to(
 				".left_bottle_anima",
 				{
-					duration: 1,
 					opacity: "0",
 				},
 				"2nd"
@@ -290,7 +324,7 @@ export default function MainAnimationSection() {
 			.to(
 				`.${styles.AnimaCircle}`,
 				{
-					duration: 2,
+					// duration: 2,
 					transform: "scale(5)",
 				},
 				"3rd"
@@ -298,7 +332,7 @@ export default function MainAnimationSection() {
 			.to(
 				`.${styles.LeftHeand}`,
 				{
-					duration: 1,
+					// duration: 1,
 					left: "0",
 				},
 				"3rd"
@@ -306,7 +340,7 @@ export default function MainAnimationSection() {
 			.to(
 				`.${styles.RightHeand}`,
 				{
-					duration: 1,
+					// duration: 1,
 					right: "0",
 				},
 				"3rd"
@@ -314,7 +348,7 @@ export default function MainAnimationSection() {
 			.to(
 				`.${styles.LeftHeand}`,
 				{
-					duration: 1,
+					// duration: 1,
 					left: "-25%",
 				},
 				"4th"
@@ -322,7 +356,7 @@ export default function MainAnimationSection() {
 			.to(
 				`.${styles.RightHeand}`,
 				{
-					duration: 1,
+					// duration: 1,
 					right: "-25%",
 				},
 				"4th"
@@ -372,26 +406,6 @@ export default function MainAnimationSection() {
 			pin: true,
 			// markers: true,
 		});
-
-		// Disable default camera controls on click
-		const model = modelRef.current;
-		if (model) {
-			/** disableInteractions */
-			const disableInteractions = (e) => {
-				e.preventDefault();
-				e.stopPropagation();
-			};
-
-			model.addEventListener("click", disableInteractions);
-			model.addEventListener("touchstart", disableInteractions);
-
-			return () => {
-				ScrollTrigger.getAll().forEach((t) => t.kill());
-				animationTimeline.kill();
-				model.removeEventListener("click", disableInteractions);
-				model.removeEventListener("touchstart", disableInteractions);
-			};
-		}
 	}, []);
 
 	return (
@@ -490,9 +504,21 @@ export default function MainAnimationSection() {
 							camera-orbit="0deg 85deg 2m"
 							shadow-intensity="1"
 							disable-zoom
-							className="modelViewer"
 							interaction-prompt="none"
+							className="modelViewer"
 						></model-viewer>
+						{/* <model-viewer
+							ref={modelRef}
+							src="/img/3d/SunDaze.glb"
+							alt="3D Bottle"
+							ar-modes="webxr scene-viewer quick-look"
+							camera-controls
+							camera-orbit="0deg 85deg 2m"
+							shadow-intensity="1"
+							disable-zoom
+							className={`${styles.SunDaze} modelViewer`}
+							interaction-prompt="none"
+						></model-viewer> */}
 					</div>
 					{/* <img
 						src={redBottleAnima.src}
