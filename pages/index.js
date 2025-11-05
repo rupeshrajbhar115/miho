@@ -8,6 +8,7 @@ import Header from "@/components/Header";
 import MetaTags from "@/components/MetaTags";
 
 // SECTIONS //
+import Loader from "@/sections/Loader";
 import IndianMade from "@/sections/IndianMade";
 import EveryFlavour from "@/sections/EveryFlavour";
 
@@ -268,6 +269,7 @@ export default function HomePage() {
 		<div>
 			{/* Metatags */}
 			<MetaTags Title={"Home"} Desc={"Home Desc"} OgImg={""} Url={"/"} />
+			<Loader />
 
 			{/* Header */}
 			<Header />

@@ -188,11 +188,6 @@
                     overflow: hidden;
                     pointer-events: auto;
                 }
-                .SunDaze{
-                    top: 0;
-                    left: 0;
-                    position: absolute;
-                }
             }
             .RedBottle{
                 width: 177px;
@@ -238,6 +233,59 @@
                     position: absolute;
                     transform: translate(-50%, -50%);
                 }
+                .GreenVector1{
+                    opacity: 0;
+                    bottom: 0;
+                    left: 50%;
+                    position: absolute;
+                    transform: translate(-50%, -50%);
+                }
+                .GreenVector2{
+                    opacity: 0;
+                    left: 50%;
+                    z-index: 0;
+                    bottom: 0;
+                    position: absolute;
+                    transform: translate(-50%, -50%);
+                }
+                .GreenVector3{
+                    opacity: 0;
+                    z-index: 0;
+                    bottom: 0%;
+                    left: 50%;
+                    position: absolute;
+                    transform: translate(-50%, -50%);
+                }
+                .GreenVector4{
+                    opacity: 0;
+                    bottom: 0%;
+                    left: 50%;
+                    position: absolute;
+                    transform: translate(-50%, -50%);
+                }
+                .GreenVector5{
+                    opacity: 0;
+                    bottom: 0%;
+                    left: 50%;
+                    position: absolute;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+        .GreenBottleAnimationNew{
+            top: 53.5%;
+            left: 50%;
+            opacity: 0;
+            position: absolute;
+            transform: translate(-50%, -50%) rotate(15deg);
+            model-viewer{
+                // position: absolute;
+                width: 32vw;
+                height: 78vh;
+                transform: rotate(-15deg);
+                display: block;
+                overflow: hidden;
+                pointer-events: auto;
             }
         }
         .circle_anima{

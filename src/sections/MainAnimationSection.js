@@ -51,6 +51,11 @@ import Flovare1 from "../../public/img/home/flovare1.png";
 import Flovare2 from "../../public/img/home/flovare2.png";
 import Flovare3 from "../../public/img/home/flovare3.png";
 import Flovare4 from "../../public/img/home/flovare4.png";
+import GreenVector1 from "../../public/img/home/GreenVector1.png";
+import GreenVector2 from "../../public/img/home/GreenVector2.png";
+import GreenVector3 from "../../public/img/home/GreenVector3.png";
+import GreenVector4 from "../../public/img/home/GreenVector4.png";
+import GreenVector5 from "../../public/img/home/GreenVector5.png";
 // import SmallCircles2 from "../../public/img/home/SmallCircles2.png";
 
 // DATA //
@@ -106,7 +111,7 @@ export default function MainAnimationSection() {
 				`.${styles.BannerLeaf}`,
 				{
 					opacity: "1",
-					delay: "0.4",
+					delay: "6",
 					duration: "1",
 				},
 				"1st"
@@ -115,7 +120,7 @@ export default function MainAnimationSection() {
 				`.${styles.bannerVector1}`,
 				{
 					scale: "1",
-					delay: "0.4",
+					delay: "6",
 				},
 				"1st"
 			)
@@ -123,7 +128,7 @@ export default function MainAnimationSection() {
 				`.${styles.bannerVector2}`,
 				{
 					scale: "1",
-					delay: "0.4",
+					delay: "6",
 				},
 				"1st"
 			)
@@ -131,7 +136,7 @@ export default function MainAnimationSection() {
 				`.${styles.bannerVector3}`,
 				{
 					scale: "1",
-					delay: "0.4",
+					delay: "6",
 				},
 				"1st"
 			)
@@ -139,7 +144,7 @@ export default function MainAnimationSection() {
 				`.${styles.bannerVector4}`,
 				{
 					scale: "1",
-					delay: "0.4",
+					delay: "6",
 				},
 				"1st"
 			)
@@ -148,6 +153,7 @@ export default function MainAnimationSection() {
 				{
 					duration: 1,
 					y: "0",
+					delay: "6",
 				},
 				"1st"
 			)
@@ -155,6 +161,7 @@ export default function MainAnimationSection() {
 				`.${styles.banner_desc} p`,
 				{
 					y: "0",
+					delay: "6",
 					duration: 1,
 				},
 				"1st"
@@ -261,15 +268,6 @@ export default function MainAnimationSection() {
 				"1st"
 			)
 			.to(
-				`.${styles.title_anima}`,
-				{
-					// duration: 1,
-					opacity: "0",
-					transform: "translateY(100%)",
-				},
-				"2nd"
-			)
-			.to(
 				`.${styles.AnimaVector1}`,
 				{
 					// duration: 1,
@@ -319,13 +317,13 @@ export default function MainAnimationSection() {
 				},
 				"2nd"
 			)
-			// .to(
-			// 	`.${styles.AnimaCircle}`,
-			// 	{
-			// 		transform: "scale(0.15)",
-			// 	},
-			// 	"2nd"
-			// )
+			.to(
+				".GreenBottleAnimationNew",
+				{
+					opacity: "1",
+				},
+				"2nd"
+			)
 			.to(
 				".left_bottle_anima",
 				{
@@ -334,12 +332,129 @@ export default function MainAnimationSection() {
 				"2nd"
 			)
 			.to(
+				`.${styles.GreenVector1}`,
+				{
+					// duration: 1,
+					left: "35%",
+					opacity: "1",
+					bottom: "40%",
+				},
+				"3rd"
+			)
+			.to(
+				`.${styles.GreenVector2}`,
+				{
+					// duration: 1,
+					left: "35%",
+					opacity: "1",
+					bottom: "-5%",
+				},
+				"3rd"
+			)
+			.to(
+				`.${styles.GreenVector3}`,
+				{
+					// duration: 1,
+					left: "65%",
+					opacity: "1",
+					bottom: "10%",
+				},
+				"3rd"
+			)
+			.to(
+				`.${styles.GreenVector4}`,
+				{
+					// duration: 1,
+					left: "67%",
+					opacity: "1",
+					bottom: "45%",
+				},
+				"3rd"
+			)
+			.to(
+				`.${styles.GreenVector5}`,
+				{
+					// duration: 1,
+					left: "65%",
+					opacity: "1",
+					bottom: "43%",
+				},
+				"3rd"
+			)
+			.to(
+				`.${styles.GreenVector1}`,
+				{
+					// duration: 1,
+					left: "50%",
+					opacity: "0",
+					bottom: "0%",
+				},
+				"4th"
+			)
+			.to(
+				`.${styles.GreenVector2}`,
+				{
+					// duration: 1,
+					left: "50%",
+					opacity: "0",
+					bottom: "0%",
+				},
+				"4th"
+			)
+			.to(
+				`.${styles.GreenVector3}`,
+				{
+					// duration: 1,
+					left: "50%",
+					opacity: "0",
+					bottom: "0%",
+				},
+				"4th"
+			)
+			.to(
+				`.${styles.GreenVector4}`,
+				{
+					// duration: 1,
+					left: "50%",
+					opacity: "0",
+					bottom: "0%",
+				},
+				"4th"
+			)
+			.to(
+				`.${styles.GreenVector5}`,
+				{
+					// duration: 1,
+					left: "50%",
+					opacity: "0",
+					bottom: "0%",
+				},
+				"4th"
+			)
+			.to(
+				`.${styles.title_anima}`,
+				{
+					// duration: 1,
+					opacity: "0",
+					transform: "translateY(100%)",
+				},
+				"4th"
+			)
+			.to(
+				".GreenBottleAnimationNew",
+				{
+					delay: "0.2",
+					opacity: "0",
+				},
+				"4th"
+			)
+			.to(
 				`.${styles.AnimaCircle}`,
 				{
 					// duration: 2,
 					transform: "scale(5)",
 				},
-				"3rd"
+				"6th"
 			)
 			.to(
 				`.${styles.LeftHeand}`,
@@ -347,7 +462,7 @@ export default function MainAnimationSection() {
 					// duration: 1,
 					left: "0",
 				},
-				"3rd"
+				"6th"
 			)
 			.to(
 				`.${styles.RightHeand}`,
@@ -355,7 +470,7 @@ export default function MainAnimationSection() {
 					// duration: 1,
 					right: "0",
 				},
-				"3rd"
+				"6th"
 			)
 			.to(
 				`.${styles.LeftHeand}`,
@@ -363,7 +478,7 @@ export default function MainAnimationSection() {
 					// duration: 1,
 					left: "-25%",
 				},
-				"4th"
+				"7th"
 			)
 			.to(
 				`.${styles.RightHeand}`,
@@ -371,105 +486,106 @@ export default function MainAnimationSection() {
 					// duration: 1,
 					right: "-25%",
 				},
-				"4th"
+				"7th"
 			)
 			.to(
 				`.${styles.para}`,
 				{
 					transform: "translateY(0%)",
 				},
-				"4th"
+				"7th"
 			)
 			.to(
 				`.${styles.img_section}`,
 				{
 					transform: "translateY(0%)",
 				},
-				"4th"
+				"7th"
 			)
 			.to(
 				`.${styles.img_section}`,
 				{
 					transform: "translateY(100%)",
 				},
-				"5th"
+				"8th"
 			)
 			.to(
 				`.${styles.para}`,
 				{
 					transform: "translateY(-100%)",
 				},
-				"5th"
+				"8th"
 			)
 			.to(
 				`.${styles.desc_section}`,
 				{
+					delay: "0.4",
 					transform: "translateY(0%)",
 				},
-				"6th"
+				"8th"
 			)
 			.to(
 				`.${styles.AnimaCircle}`,
 				{
 					transform: "scale(7)",
 				},
-				"7th"
+				"9th"
 			)
 			.to(
 				`.${styles.LeftHeand}`,
 				{
 					left: "-100%",
 				},
-				"7th"
+				"9th"
 			)
 			.to(
 				`.${styles.RightHeand}`,
 				{
 					right: "-100%",
 				},
-				"7th"
+				"9th"
 			)
 			.to(
 				`.${styles.desc_section}`,
 				{
 					transform: "translateY(100%)",
 				},
-				"7th"
+				"9th"
 			)
 			.to(
 				`.${styles.Flovare1}`,
 				{
 					scale: "1",
 				},
-				"8th"
+				"10th"
 			)
 			.to(
 				`.${styles.Flovare2}`,
 				{
 					scale: "1",
 				},
-				"8th"
+				"10th"
 			)
 			.to(
 				`.${styles.Flovare3}`,
 				{
 					scale: "1",
 				},
-				"8th"
+				"10th"
 			)
 			.to(
 				`.${styles.Mood}`,
 				{
 					scale: "1",
 				},
-				"8th"
+				"10th"
 			)
 			.to(
 				`.${styles.Flovare4}`,
 				{
 					scale: "1",
 				},
-				"8th"
+				"10th"
 			)
 			.to(
 				`.${styles.Leaf}`,
@@ -477,7 +593,7 @@ export default function MainAnimationSection() {
 					opacity: "1",
 					right: "0",
 				},
-				"8th"
+				"10th"
 			)
 			.to(
 				`.${styles.LeftLine}`,
@@ -485,7 +601,7 @@ export default function MainAnimationSection() {
 					left: "0",
 					opacity: 1,
 				},
-				"8th"
+				"10th"
 			)
 			.to(
 				`.${styles.RightLine}`,
@@ -493,21 +609,21 @@ export default function MainAnimationSection() {
 					right: "0",
 					opacity: 1,
 				},
-				"8th"
+				"10th"
 			)
 			.to(
 				`.${styles.CenterLine}`,
 				{
 					opacity: 1,
 				},
-				"8th"
+				"10th"
 			)
 			.to(
 				`.${styles.bottom_img}`,
 				{
 					transform: "translateY(-15%)",
 				},
-				"8th"
+				"10th"
 			)
 			.to(
 				`.${styles.one} h2`,
@@ -515,7 +631,7 @@ export default function MainAnimationSection() {
 					delay: "0.4",
 					transform: "translateY(0%)",
 				},
-				"8th"
+				"10th"
 			)
 			.to(
 				`.${styles.two} h2`,
@@ -523,7 +639,7 @@ export default function MainAnimationSection() {
 					delay: "0.4",
 					transform: "translateY(0%)",
 				},
-				"8th"
+				"10th"
 			)
 			.to(
 				`.${styles.three} h2`,
@@ -531,7 +647,7 @@ export default function MainAnimationSection() {
 					delay: "0.4",
 					transform: "translateY(0%)",
 				},
-				"8th"
+				"10th"
 			)
 			.to(
 				`.${styles.para_data} p`,
@@ -539,7 +655,7 @@ export default function MainAnimationSection() {
 					delay: "0.4",
 					transform: "translateY(0%)",
 				},
-				"8th"
+				"10th"
 			);
 
 		ScrollTrigger.create({
@@ -696,7 +812,61 @@ export default function MainAnimationSection() {
 							alt="image"
 							className={`${styles.AnimaVector5} img-responsive`}
 						/>
+						{/* <img
+							src={GreenVector1.src}
+							alt="image"
+							className={`${styles.GreenVector1} img-responsive`}
+						/> */}
+						<img
+							src={GreenVector2.src}
+							alt="image"
+							className={`${styles.GreenVector2} img-responsive`}
+						/>
+						<img
+							src={GreenVector3.src}
+							alt="image"
+							className={`${styles.GreenVector3} img-responsive`}
+						/>
+						<img
+							src={GreenVector4.src}
+							alt="image"
+							className={`${styles.GreenVector4} img-responsive`}
+						/>
+						<img
+							src={GreenVector5.src}
+							alt="image"
+							className={`${styles.GreenVector1} img-responsive`}
+						/>
 					</div>
+				</div>
+
+				<div
+					className={`${styles.GreenBottleAnimationNew} GreenBottleAnimationNew`}
+				>
+					<model-viewer
+						ref={modelRef}
+						src="/img/3d/SunDaze.glb"
+						alt="3D Bottle"
+						ar-modes="webxr scene-viewer quick-look"
+						camera-controls
+						camera-orbit="0deg 85deg 2m"
+						shadow-intensity="1"
+						disable-zoom
+						interaction-prompt="none"
+						className="modelViewer"
+					></model-viewer>
+					{/* <model-viewer
+							ref={modelRef}
+							src="/img/3d/SunDaze.glb"
+							alt="3D Bottle"
+							ar-modes="webxr scene-viewer quick-look"
+							camera-controls
+							camera-orbit="0deg 85deg 2m"
+							shadow-intensity="1"
+							disable-zoom
+							className={`${styles.SunDaze} modelViewer`}
+							interaction-prompt="none"
+						></model-viewer> */}
 				</div>
 
 				{/* circle_anima */}
@@ -837,6 +1007,7 @@ export default function MainAnimationSection() {
 						alt="image"
 						className={`${styles.Flovare4} img-responsive`}
 					/>
+
 					<div className={styles.text_section}>
 						<div className={styles.title_animation}>
 							<div className={styles.one}>
