@@ -39,6 +39,18 @@ import CircleImg2 from "../../public/img/home/CircleImg2.png";
 import CircleImg3 from "../../public/img/home/CircleImg3.png";
 import AnimaCircle from "../../public/img/home/AnimaCircle.svg";
 import SmallCircles1 from "../../public/img/home/SmallCircles1.png";
+
+import LeftWave from "../../public/img/home/left_wave.png";
+import RightWave from "../../public/img/home/right_wave.png";
+import LeftLine from "../../public/img/home/left_line.png";
+import CenterLine from "../../public/img/home/center_line.png";
+import RightLine from "../../public/img/home/right_line.png";
+import Leaf from "../../public/img/home/leaf.png";
+import Mood from "../../public/img/home/moon.png";
+import Flovare1 from "../../public/img/home/flovare1.png";
+import Flovare2 from "../../public/img/home/flovare2.png";
+import Flovare3 from "../../public/img/home/flovare3.png";
+import Flovare4 from "../../public/img/home/flovare4.png";
 // import SmallCircles2 from "../../public/img/home/SmallCircles2.png";
 
 // DATA //
@@ -395,12 +407,145 @@ export default function MainAnimationSection() {
 					transform: "translateY(0%)",
 				},
 				"6th"
+			)
+			.to(
+				`.${styles.AnimaCircle}`,
+				{
+					transform: "scale(7)",
+				},
+				"7th"
+			)
+			.to(
+				`.${styles.LeftHeand}`,
+				{
+					left: "-100%",
+				},
+				"7th"
+			)
+			.to(
+				`.${styles.RightHeand}`,
+				{
+					right: "-100%",
+				},
+				"7th"
+			)
+			.to(
+				`.${styles.desc_section}`,
+				{
+					transform: "translateY(100%)",
+				},
+				"7th"
+			)
+			.to(
+				`.${styles.Flovare1}`,
+				{
+					scale: "1",
+				},
+				"8th"
+			)
+			.to(
+				`.${styles.Flovare2}`,
+				{
+					scale: "1",
+				},
+				"8th"
+			)
+			.to(
+				`.${styles.Flovare3}`,
+				{
+					scale: "1",
+				},
+				"8th"
+			)
+			.to(
+				`.${styles.Mood}`,
+				{
+					scale: "1",
+				},
+				"8th"
+			)
+			.to(
+				`.${styles.Flovare4}`,
+				{
+					scale: "1",
+				},
+				"8th"
+			)
+			.to(
+				`.${styles.Leaf}`,
+				{
+					opacity: "1",
+					right: "0",
+				},
+				"8th"
+			)
+			.to(
+				`.${styles.LeftLine}`,
+				{
+					left: "0",
+					opacity: 1,
+				},
+				"8th"
+			)
+			.to(
+				`.${styles.RightLine}`,
+				{
+					right: "0",
+					opacity: 1,
+				},
+				"8th"
+			)
+			.to(
+				`.${styles.CenterLine}`,
+				{
+					opacity: 1,
+				},
+				"8th"
+			)
+			.to(
+				`.${styles.bottom_img}`,
+				{
+					transform: "translateY(-15%)",
+				},
+				"8th"
+			)
+			.to(
+				`.${styles.one} h2`,
+				{
+					delay: "0.4",
+					transform: "translateY(0%)",
+				},
+				"8th"
+			)
+			.to(
+				`.${styles.two} h2`,
+				{
+					delay: "0.4",
+					transform: "translateY(0%)",
+				},
+				"8th"
+			)
+			.to(
+				`.${styles.three} h2`,
+				{
+					delay: "0.4",
+					transform: "translateY(0%)",
+				},
+				"8th"
+			)
+			.to(
+				`.${styles.para_data} p`,
+				{
+					delay: "0.4",
+					transform: "translateY(0%)",
+				},
+				"8th"
 			);
 
 		ScrollTrigger.create({
 			trigger: `.${styles.bottle_anima_section}`,
 			start: "top top",
-			end: "+=" + winH * 3,
+			end: "+=" + winH * 4,
 			animation: animationTimeline1,
 			scrub: true,
 			pin: true,
@@ -645,8 +790,93 @@ export default function MainAnimationSection() {
 						</div>
 					</div>
 				</div>
+
+				<div className={styles.IndianMade}>
+					<img
+						src={LeftLine.src}
+						alt="image"
+						className={`${styles.LeftLine} img-responsive`}
+					/>
+					<img
+						src={CenterLine.src}
+						alt="image"
+						className={`${styles.CenterLine} img-responsive`}
+					/>
+					<img
+						src={RightLine.src}
+						alt="image"
+						className={`${styles.RightLine} img-responsive`}
+					/>
+					<img
+						src={Leaf.src}
+						alt="image"
+						className={`${styles.Leaf} img-responsive`}
+					/>
+					<img
+						src={Mood.src}
+						alt="image"
+						className={`${styles.Mood} img-responsive`}
+					/>
+					<img
+						src={Flovare1.src}
+						alt="image"
+						className={`${styles.Flovare1} img-responsive`}
+					/>
+					<img
+						src={Flovare2.src}
+						alt="image"
+						className={`${styles.Flovare2} img-responsive`}
+					/>
+					<img
+						src={Flovare3.src}
+						alt="image"
+						className={`${styles.Flovare3} img-responsive`}
+					/>
+					<img
+						src={Flovare4.src}
+						alt="image"
+						className={`${styles.Flovare4} img-responsive`}
+					/>
+					<div className={styles.text_section}>
+						<div className={styles.title_animation}>
+							<div className={styles.one}>
+								<h2 className="section_big_title">
+									<span>Indian-Made. </span>
+								</h2>
+							</div>
+							<div className={styles.two}>
+								<h2 className="section_big_title">
+									<span>K-Wave Inspired.</span>
+								</h2>
+							</div>
+							<div className={styles.three}>
+								<h2 className="section_big_title">
+									<span>You-Approved.</span>
+								</h2>
+							</div>
+							<div className={styles.para_data}>
+								<p>
+									MIHO blends the heart of India with the soul of Korean culture. Born
+									out of a love for culture, friendship, and feel-good fun, it’s drink
+									that flips the script. Smooth and full of flavour, MIHO is designed for
+									those who crave style without excess. We’re not chasing wild nights;
+									we’re embracing mellow vibes. Stylish, inclusive, and totally
+									unpretentious — MIHO Soju is for those who believe life’s best moments
+									are the ones you can remember.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div className={styles.bottom_img}>
+						<div className={styles.left_img}>
+							<img src={LeftWave.src} alt="image" className="img-responsive" />
+						</div>
+						<div className={styles.right_img}>
+							<img src={RightWave.src} alt="image" className="img-responsive" />
+						</div>
+					</div>
+				</div>
 			</div>
-			{/* <div className="divHeight"></div> */}
 		</section>
 	);
 }

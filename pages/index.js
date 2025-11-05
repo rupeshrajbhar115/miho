@@ -154,9 +154,9 @@ export default function HomePage() {
 			city: "Bengaluru",
 		},
 	];
-	const [selectedCity, setSelectedCity] = useState("Mumbai");
+	const [selectedCity, setSelectedCity] = useState("Bengaluru");
 	const [filteredData, setFilteredData] = useState(
-		locationsData.filter((loc) => loc.city === "Mumbai")
+		locationsData.filter((loc) => loc.city === "Bengaluru")
 	);
 
 	/** handleSearch */
@@ -275,7 +275,7 @@ export default function HomePage() {
 			{/* Page Content starts here */}
 			<main className={`${styles.HomePage}`}>
 				<MainAnimationSection />
-				<IndianMade />
+				{/* <IndianMade /> */}
 				<EveryFlavour />
 				<section className={`${styles.just_section}`}>
 					<img
@@ -671,9 +671,9 @@ export default function HomePage() {
 											onChange={(e) => setSelectedCity(e.target.value)}
 											className={styles.dropdown}
 										>
+											<option value="Bengaluru">Bengaluru</option>
 											<option value="Mumbai">Mumbai</option>
 											<option value="Noida">Noida</option>
-											<option value="Bengaluru">Bengaluru</option>
 										</select>
 										<button onClick={handleSearch} className="submitButton">
 											SEARCH

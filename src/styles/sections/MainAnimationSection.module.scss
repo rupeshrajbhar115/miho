@@ -1,6 +1,7 @@
 @import "../helpers/helpers.scss";
 			
 .MainAnimationSection{
+    position: relative;
     .banner_section{
         height: 100vh;
         padding: 130px 4vw 100px 4vw;
@@ -276,7 +277,6 @@
                 transform: translateY(-50%); 
             } 
         }
-
         .heandTextAnima{
             width: 100vw;
             height: 100vh;
@@ -350,6 +350,129 @@
                     }
                 }
                 
+            }
+        }
+        .IndianMade{
+            top: 0;
+            padding: 80px 0 0;
+            position: absolute;
+            .LeftLine{
+                opacity: 0;
+                top: 100px;
+                left: -50px;
+                position: absolute;
+            }
+            .CenterLine{
+                top: 50%;
+                left: 15%;
+                opacity: 0;
+                position: absolute; 
+                transform: translate(-50%, -50%);
+            }
+            .RightLine{
+                top: 35%;
+                right: -60px;
+                z-index: 1;
+                opacity: 0;
+                position: absolute; 
+                transform: translateY(-50%);
+            }
+            .Leaf{
+                opacity: 0;
+                top: 50px;
+                z-index: 1;
+                right: -50px;
+                position: absolute; 
+            }
+            .Mood{
+                right: 7%;
+                top: 150px;
+                position: absolute;
+                transform: translateX(-50%) scale(0);
+            }
+            .Flovare1{
+                top: 150px;
+                left: 13%;
+                position: absolute;
+                transform: translateX(-50%) scale(0);
+            }
+            .Flovare2{
+                top: 42%;
+                left: 28%;
+                position: absolute;
+                transform: translate(-50%, -50%) scale(0);
+            }
+            .Flovare3{
+                top: 54%;
+                right: 20%;
+                position: absolute;
+                transform: translate(-50%, -50%) scale(0);
+            }
+            .Flovare4{
+                top: 80px;
+                right: 2%;
+                z-index: 1;
+                position: absolute;
+                transform: translateX(-50%) scale(0);
+            }
+            .text_section{
+                .title_animation{
+                    text-align: center;
+                    .one{
+                        overflow: hidden;
+                        h2{
+                            transform: translateY(100%);
+                        }
+                    }
+                    .two{
+                        overflow: hidden;
+                        h2{
+                            transform: translateY(100%);
+                        }
+                    }
+                    .three{
+                        overflow: hidden;
+                        h2{
+                            transform: translateY(100%);
+                        }
+                    }
+                    h2{
+                        line-height: 110px;
+                    }
+                    .para_data{
+                        width: 65%;
+                        margin: auto;
+                        color: #236F00;
+                        text-align: center;
+                        font-size: 26px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 32px;
+                        letter-spacing: -0.52px;
+                        padding-top: 60px;
+                        overflow: hidden;
+                        p{
+                            transform: translateY(100%);
+                        }
+                    }
+                }
+            }
+            .bottom_img{
+                width: 100%;
+                display: flex;
+                position: relative;
+                align-items: flex-end;
+                transform: translateY(100%);
+                justify-content: space-between;
+                .left_img{
+                    z-index: 1;
+                    position: relative;
+                }
+                .right_img{
+                    right: 0;
+                    bottom: 0;
+                    position: absolute;
+                }
             }
         }
     }

@@ -233,7 +233,7 @@ export default function EveryFlavour() {
 			.to(
 				`.${styles.RedBottleAnima}`,
 				{
-					duration: 2,
+					duration: 1,
 					clipPath: "polygon(0% 0%, 0% 0%, 20% 98%, 20% 99%)",
 				},
 				"2nd"
