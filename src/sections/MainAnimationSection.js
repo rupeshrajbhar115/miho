@@ -758,7 +758,7 @@ export default function MainAnimationSection() {
 					<div className={`${styles.left_bottle} left_bottle_anima`}>
 						<model-viewer
 							ref={modelRef}
-							src="/img/3d/BerryBliss.glb"
+							src="/img/3d/SunDaze.glb"
 							alt="3D Bottle"
 							ar-modes="webxr scene-viewer quick-look"
 							camera-controls
@@ -768,18 +768,6 @@ export default function MainAnimationSection() {
 							interaction-prompt="none"
 							className="modelViewer"
 						></model-viewer>
-						{/* <model-viewer
-							ref={modelRef}
-							src="/img/3d/SunDaze.glb"
-							alt="3D Bottle"
-							ar-modes="webxr scene-viewer quick-look"
-							camera-controls
-							camera-orbit="0deg 85deg 2m"
-							shadow-intensity="1"
-							disable-zoom
-							className={`${styles.SunDaze} modelViewer`}
-							interaction-prompt="none"
-						></model-viewer> */}
 					</div>
 					{/* <img
 						src={redBottleAnima.src}
