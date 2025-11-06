@@ -65,38 +65,26 @@ export default function MainAnimationSection() {
 	const modelRef = useRef(null);
 
 	useEffect(() => {
-		const model = modelRef.current;
+		/** Wait for model-viewer to be defined */
+		const waitForModel = () => {
+			if (customElements.get("model-viewer") && modelRef.current) {
+				const model = modelRef.current;
 
-		if (model) {
-			/** Disable all interactions on the model-viewer */
-			const disableInteractions = (e) => {
-				e.preventDefault();
-				e.stopPropagation();
-			};
+				// ✅ Disable all pointer events completely
+				model.style.pointerEvents = "none";
+				model.setAttribute("interaction-prompt", "none");
+				model.setAttribute("camera-controls", ""); // keep camera-controls attribute if needed for animation
+				model.removeAttribute("ar"); // optional, if AR shouldn’t trigger
+			} else {
+				requestAnimationFrame(waitForModel);
+			}
+		};
 
-			model.addEventListener("click", disableInteractions);
-			model.addEventListener("mousedown", disableInteractions);
-			model.addEventListener("mouseup", disableInteractions);
-			model.addEventListener("touchstart", disableInteractions);
-			model.addEventListener("touchmove", disableInteractions);
-			model.addEventListener("touchend", disableInteractions);
-			model.addEventListener("wheel", disableInteractions);
+		waitForModel();
 
-			// Optional: also disable pointer events via CSS
-			model.style.pointerEvents = "none";
-
-			// Cleanup when unmounted
-			return () => {
-				ScrollTrigger.getAll().forEach((t) => t.kill());
-				model.removeEventListener("click", disableInteractions);
-				model.removeEventListener("mousedown", disableInteractions);
-				model.removeEventListener("mouseup", disableInteractions);
-				model.removeEventListener("touchstart", disableInteractions);
-				model.removeEventListener("touchmove", disableInteractions);
-				model.removeEventListener("touchend", disableInteractions);
-				model.removeEventListener("wheel", disableInteractions);
-			};
-		}
+		return () => {
+			ScrollTrigger.getAll().forEach((t) => t.kill());
+		};
 	}, []);
 
 	useEffect(() => {
@@ -744,6 +732,9 @@ export default function MainAnimationSection() {
 									shadow-intensity="1"
 									disable-zoom
 									interaction-prompt="none"
+									style={{
+										pointerEvents: "none",
+									}}
 								></model-viewer>
 							</div>
 							{/* <img
@@ -779,6 +770,9 @@ export default function MainAnimationSection() {
 							disable-zoom
 							interaction-prompt="none"
 							className="modelViewer"
+							style={{
+								pointerEvents: "none",
+							}}
 						></model-viewer>
 						{/* <model-viewer
 							ref={modelRef}
@@ -866,6 +860,9 @@ export default function MainAnimationSection() {
 						disable-zoom
 						interaction-prompt="none"
 						className="modelViewer"
+						style={{
+							pointerEvents: "none",
+						}}
 					></model-viewer>
 					{/* <model-viewer
 							ref={modelRef}
@@ -973,7 +970,7 @@ export default function MainAnimationSection() {
 					</div>
 				</div>
 
-				<div className={styles.IndianMade}>
+				<div className={styles.IndianMade} id="about">
 					<img
 						src={LeftLine.src}
 						alt="image"

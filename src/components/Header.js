@@ -8,6 +8,16 @@ import Link from "next/link";
 // SECTIONS //
 
 // PLUGINS //
+import * as Scroll from "react-scroll";
+import {
+	Link as ScrollSection,
+	// Button,
+	Element,
+	Events,
+	animateScroll as scroll,
+	scrollSpy,
+	scroller,
+} from "react-scroll";
 
 // UTILS //
 
@@ -54,34 +64,91 @@ export default function Header() {
 					{/* Links Wrap */}
 					<div className={`${styles.links_wrap}`}>
 						<div className={styles.links}>
-							<Link href="">
+							<ScrollSection
+								onClick={toggleSidebar}
+								activeClass={styles.active}
+								to="home"
+								spy={true}
+								smooth={true}
+								offset={-10}
+								duration={500}
+								className={`${styles.link_title}`}
+							>
+								<div className={styles.link_title}>Home</div>
+							</ScrollSection>
+							{/* <Link href="">
 								<div className={`${styles.link_title} ${styles.active}`}>Home</div>
-							</Link>
+							</Link> */}
 						</div>
 						<div className={styles.links}>
-							<Link href="">
+							<ScrollSection
+								onClick={toggleSidebar}
+								activeClass="active"
+								to="about"
+								spy={true}
+								smooth={true}
+								offset={-10}
+								duration={500}
+								className={`${styles.link_title}`}
+							>
 								<div className={styles.link_title}>About Miho</div>
-							</Link>
+							</ScrollSection>
 						</div>
 						<div className={styles.links}>
-							<Link href="">
+							<ScrollSection
+								onClick={toggleSidebar}
+								activeClass="active"
+								to="taste"
+								spy={true}
+								smooth={true}
+								offset={20}
+								duration={500}
+								className={`${styles.link_title}`}
+							>
 								<div className={styles.link_title}>Taste</div>
-							</Link>
+							</ScrollSection>
 						</div>
 						<div className={styles.links}>
-							<Link href="">
+							<ScrollSection
+								onClick={toggleSidebar}
+								activeClass="active"
+								to="mihopedia"
+								spy={true}
+								smooth={true}
+								offset={20}
+								duration={500}
+								className={`${styles.link_title}`}
+							>
 								<div className={styles.link_title}>Mihopedia</div>
-							</Link>
+							</ScrollSection>
 						</div>
 						<div className={styles.links}>
-							<Link href="">
+							<ScrollSection
+								onClick={toggleSidebar}
+								activeClass="active"
+								to="events"
+								spy={true}
+								smooth={true}
+								offset={-200}
+								duration={500}
+								className={`${styles.link_title}`}
+							>
 								<div className={styles.link_title}>Events</div>
-							</Link>
+							</ScrollSection>
 						</div>
 						<div className={styles.links}>
-							<Link href="">
+							<ScrollSection
+								onClick={toggleSidebar}
+								activeClass="active"
+								to="store"
+								spy={true}
+								smooth={true}
+								offset={0}
+								duration={500}
+								className={`${styles.link_title}`}
+							>
 								<div className={styles.link_title}>Store Locator</div>
-							</Link>
+							</ScrollSection>
 						</div>
 					</div>
 

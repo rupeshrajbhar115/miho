@@ -276,9 +276,13 @@ export default function HomePage() {
 
 			{/* Page Content starts here */}
 			<main className={`${styles.HomePage}`}>
-				<MainAnimationSection />
+				<div id="home">
+					<MainAnimationSection />
+				</div>
 				{/* <IndianMade /> */}
-				<EveryFlavour />
+				<div id="taste">
+					<EveryFlavour />
+				</div>
 				<section className={`${styles.just_section}`}>
 					<img
 						src={GreenWaveTop.src}
@@ -399,7 +403,7 @@ export default function HomePage() {
 				</section>
 				<section className={`${styles.miho_slider_section}`}>
 					<div className="container">
-						<div className={`${styles.miho_mihopedia_section}`}>
+						<div className={`${styles.miho_mihopedia_section}`} id="mihopedia">
 							<div className={`${styles.mihopedia}`}>
 								<h2 className="section_big_title toTop" data-scroll>
 									Mihopedia
@@ -509,7 +513,7 @@ export default function HomePage() {
 							<h2 className="section_big_title toTop" data-scroll>
 								Miho Events
 							</h2>
-							<div className={`${styles.miho_events} toTop`} data-scroll>
+							<div className={`${styles.miho_events} toTop`} data-scroll id="events">
 								<div className="custom-progressbar"></div>
 
 								{/* Main Slider */}
@@ -647,7 +651,7 @@ export default function HomePage() {
 						</div>
 					</div>
 				</section>
-				<section className={`${styles.fing_faq_section}`}>
+				<section className={`${styles.fing_faq_section}`} id="store">
 					<div className="container">
 						<div className={styles.find_section}>
 							<div className={`${styles.img_section} toTop`} data-scroll>
