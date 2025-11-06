@@ -26,7 +26,6 @@ import bannerVector1 from "../../public/img/home/bannerVector1.png";
 import bannerVector2 from "../../public/img/home/bannerVector2.png";
 import bannerVector3 from "../../public/img/home/bannerVector3.png";
 import bannerVector4 from "../../public/img/home/bannerVector4.png";
-import redBottleAnima from "../../public/img/home/redBottleAnima.svg";
 import AnimaVector1 from "../../public/img/home/AnimaVector1.png";
 import AnimaVector2 from "../../public/img/home/AnimaVector2.png";
 import AnimaVector3 from "../../public/img/home/AnimaVector3.png";
@@ -39,7 +38,6 @@ import CircleImg2 from "../../public/img/home/CircleImg2.png";
 import CircleImg3 from "../../public/img/home/CircleImg3.png";
 import AnimaCircle from "../../public/img/home/AnimaCircle.svg";
 import SmallCircles1 from "../../public/img/home/SmallCircles1.png";
-
 import LeftWave from "../../public/img/home/left_wave.png";
 import RightWave from "../../public/img/home/right_wave.png";
 import LeftLine from "../../public/img/home/left_line.png";
@@ -56,7 +54,17 @@ import GreenVector2 from "../../public/img/home/GreenVector2.png";
 import GreenVector3 from "../../public/img/home/GreenVector3.png";
 import GreenVector4 from "../../public/img/home/GreenVector4.png";
 import GreenVector5 from "../../public/img/home/GreenVector5.png";
-// import SmallCircles2 from "../../public/img/home/SmallCircles2.png";
+import RedWaveTop from "../../public/img/home/red_wave_top.svg";
+import GreenWaveBottom from "../../public/img/home/green_wave_top.svg";
+import RedCircle from "../../public/img/home/red_circle.png";
+import GreenCircle from "../../public/img/home/green_circle.png";
+import RedVector1 from "../../public/img/home/RedVector1.png";
+import RedVector2 from "../../public/img/home/RedVector2.png";
+import RedVector3 from "../../public/img/home/RedVector3.png";
+import RedVector4 from "../../public/img/home/RedVector4.png";
+import RedVector5 from "../../public/img/home/RedVector5.png";
+import RedVector6 from "../../public/img/home/RedVector6.png";
+import GreenVector6 from "../../public/img/home/GreenVector6.png";
 
 // DATA //
 
@@ -621,7 +629,7 @@ export default function MainAnimationSection() {
 			.to(
 				`.${styles.bottom_img}`,
 				{
-					transform: "translateY(-15%)",
+					transform: "translateY(10%)",
 				},
 				"10th"
 			)
@@ -656,6 +664,228 @@ export default function MainAnimationSection() {
 					transform: "translateY(0%)",
 				},
 				"10th"
+			)
+			.to(
+				`.${styles.IndianMade}`,
+				{
+					opacity: 0,
+				},
+				"11th"
+			)
+			.to(
+				`.${styles.text_section_flavour_inner}`,
+				{
+					delay: "0.3",
+					transform: "translateY(0%)",
+				},
+				"11th"
+			)
+			.to(
+				`.${styles.RedWaveTop}`,
+				{
+					delay: "0.6",
+					top: "-90px",
+				},
+				"11th"
+			)
+			.to(
+				`.${styles.EveryFlavour}`,
+				{
+					transform: "translateY(0%)",
+				},
+				"12th"
+			)
+			.to(
+				`.${styles.RedVector1}`,
+				{
+					top: "30%",
+					duration: 1,
+				},
+				"13th"
+			)
+			.to(
+				`.${styles.RedVector2}`,
+				{
+					top: "20%",
+					duration: 1,
+				},
+				"13th"
+			)
+			.to(
+				`.${styles.RedVector3}`,
+				{
+					bottom: "10%",
+					duration: 0.6,
+				},
+				"13th"
+			)
+			.to(
+				`.${styles.RedVector4}`,
+				{
+					bottom: "20%",
+					duration: 1,
+				},
+				"13th"
+			)
+			.to(
+				`.${styles.RedVector5}`,
+				{
+					top: "15%",
+					duration: 1,
+				},
+				"13th"
+			)
+			.to(
+				`.${styles.RedVector6}`,
+				{
+					bottom: "0%",
+					duration: 1,
+				},
+				"13th"
+			)
+			.to(
+				`.${styles.span1}`,
+				{
+					duration: 1,
+					transform: "translateY(0%)",
+				},
+				"13th"
+			)
+			.to(
+				`.${styles.FlavourBot1}`,
+				{
+					top: "50%",
+					duration: 1,
+				},
+				"13th"
+			)
+			.to(
+				`.${styles.flavour_section_2}`,
+				{
+					duration: 1,
+					transform: "translateY(-100%)",
+				},
+				"14th"
+			)
+			.to(
+				`.${styles.span1}`,
+				{
+					duration: 1,
+					transform: "translateX(-100%)",
+				},
+				"14th"
+			)
+			.to(
+				`.${styles.span2}`,
+				{
+					duration: 1,
+					transform: "translateX(-100%)",
+				},
+				"14th"
+			)
+			.to(
+				`.${styles.GreenVector1}`,
+				{
+					top: "30%",
+					duration: 1,
+				},
+				"14th"
+			)
+			.to(
+				`.${styles.GreenVector2}`,
+				{
+					top: "20%",
+					duration: 1,
+				},
+				"14th"
+			)
+			.to(
+				`.${styles.GreenVector3}`,
+				{
+					bottom: "10%",
+					duration: 0.6,
+				},
+				"14th"
+			)
+			.to(
+				`.${styles.GreenVector4}`,
+				{
+					bottom: "20%",
+					duration: 1,
+				},
+				"14th"
+			)
+			.to(
+				`.${styles.GreenVector5}`,
+				{
+					top: "15%",
+					duration: 1,
+				},
+				"14th"
+			)
+			.to(
+				`.${styles.GreenVector6}`,
+				{
+					bottom: "0%",
+					duration: 1,
+				},
+				"14th"
+			)
+			.to(
+				`.${styles.RedVector1}`,
+				{
+					top: "120%",
+					duration: 1,
+				},
+				"14th"
+			)
+			.to(
+				`.${styles.RedVector2}`,
+				{
+					top: "120%",
+					duration: 1,
+				},
+				"14th"
+			)
+			.to(
+				`.${styles.RedVector3}`,
+				{
+					bottom: "-120%",
+					duration: 0.6,
+				},
+				"14th"
+			)
+			.to(
+				`.${styles.RedVector4}`,
+				{
+					bottom: "-120%",
+					duration: 1,
+				},
+				"14th"
+			)
+			.to(
+				`.${styles.RedVector5}`,
+				{
+					top: "120%",
+					duration: 1,
+				},
+				"14th"
+			)
+			.to(
+				`.${styles.RedVector6}`,
+				{
+					bottom: "-120%",
+					duration: 1,
+				},
+				"14th"
+			)
+			.to(
+				`.${styles.RedBottleAnima}`,
+				{
+					duration: 1,
+					clipPath: "polygon(0% 0%, 0% 0%, 20% 98%, 20% 99%)",
+				},
+				"14th"
 			);
 
 		ScrollTrigger.create({
@@ -1052,6 +1282,139 @@ export default function MainAnimationSection() {
 						</div>
 						<div className={styles.right_img}>
 							<img src={RightWave.src} alt="image" className="img-responsive" />
+						</div>
+					</div>
+				</div>
+
+				<div className={`${styles.top_text_section}`}>
+					<div className={`${styles.text_section_flavour_wrapper}`}>
+						<div className={`${styles.text_section_flavour_main}`}>
+							<div className={`${styles.text_section_flavour_inner}`}>
+								<div className={`section_big_title ${styles.text_animation}`}>
+									<span className={styles.left_img}>Every Flavour, Loves</span>{" "}
+									<span className={styles.right_img}>a Mood.</span>
+									<div className={styles.text_animation_inner}>
+										<img src={Mood.src} alt="image" className="img-responsive" />
+									</div>
+								</div>
+								<h6>Soft on the senses. Big on personality.</h6>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div className={styles.EveryFlavour}>
+					<img
+						src={RedWaveTop.src}
+						alt="image"
+						className={`${styles.RedWaveTop} img-responsive`}
+					/>
+					<div className={`${styles.flavour_wrapper}`}>
+						<div className={`${styles.flavour_section_1}`}>
+							<div className={`${styles.text_animation}`}>
+								<div className={`${styles.text_left}`}>
+									<span className={`${styles.span1}`}>Berry</span>
+									<span className={`${styles.span2}`}>sun</span>
+								</div>
+								<div className={`${styles.text_left} ${styles.text_right}`}>
+									<span className={`${styles.span1}`}>
+										<span>Bliss</span> <p>Sweet, happy, and a little flirty.</p>
+									</span>
+									<span className={`${styles.span2}`}>
+										<span>Daze</span> <p>Zesty, bright, and sunshine in a sip.</p>
+									</span>
+								</div>
+							</div>
+
+							<div className={`${styles.bottle_section}`}>
+								<img
+									src={GreenBottle.src}
+									alt="image"
+									className={`${styles.FlavourBot1} ${styles.GreenBottleAnima} img-responsive`}
+								/>
+								<img
+									src={RedBottle.src}
+									alt="image"
+									className={`${styles.FlavourBot1} ${styles.RedBottleAnima} img-responsive`}
+								/>
+							</div>
+							<img
+								src={RedCircle.src}
+								alt="image"
+								className={`${styles.RedCircle} img-responsive`}
+							/>
+							<img
+								src={RedVector1.src}
+								alt="image"
+								className={`${styles.RedVector1} img-responsive`}
+							/>
+							<img
+								src={RedVector2.src}
+								alt="image"
+								className={`${styles.RedVector2} img-responsive`}
+							/>
+							<img
+								src={RedVector3.src}
+								alt="image"
+								className={`${styles.RedVector3} img-responsive`}
+							/>
+							<img
+								src={RedVector4.src}
+								alt="image"
+								className={`${styles.RedVector4} img-responsive`}
+							/>
+							<img
+								src={RedVector5.src}
+								alt="image"
+								className={`${styles.RedVector5} img-responsive`}
+							/>
+							<img
+								src={RedVector6.src}
+								alt="image"
+								className={`${styles.RedVector6} img-responsive`}
+							/>
+							<img
+								src={GreenVector1.src}
+								alt="image"
+								className={`${styles.GreenVector1} img-responsive`}
+							/>
+							<img
+								src={GreenVector2.src}
+								alt="image"
+								className={`${styles.GreenVector2} img-responsive`}
+							/>
+							<img
+								src={GreenVector3.src}
+								alt="image"
+								className={`${styles.GreenVector3} img-responsive`}
+							/>
+							<img
+								src={GreenVector4.src}
+								alt="image"
+								className={`${styles.GreenVector4} img-responsive`}
+							/>
+							<img
+								src={GreenVector5.src}
+								alt="image"
+								className={`${styles.GreenVector5} img-responsive`}
+							/>
+							<img
+								src={GreenVector6.src}
+								alt="image"
+								className={`${styles.GreenVector6} img-responsive`}
+							/>
+						</div>
+						<div className={`${styles.flavour_section_2}`}>
+							<img
+								src={GreenWaveBottom.src}
+								alt="image"
+								className={`${styles.RedWaveTop} img-responsive`}
+							/>
+							<img
+								src={GreenCircle.src}
+								alt="image"
+								className={`${styles.GreenCircle} img-responsive`}
+							/>
 						</div>
 					</div>
 				</div>

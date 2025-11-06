@@ -269,7 +269,7 @@ export default function HomePage() {
 		<div>
 			{/* Metatags */}
 			<MetaTags Title={"Home"} Desc={"Home Desc"} OgImg={""} Url={"/"} />
-			<Loader />
+			{/* <Loader /> */}
 
 			{/* Header */}
 			<Header />
@@ -280,9 +280,9 @@ export default function HomePage() {
 					<MainAnimationSection />
 				</div>
 				{/* <IndianMade /> */}
-				<div id="taste">
+				{/* <div id="taste">
 					<EveryFlavour />
-				</div>
+				</div> */}
 				<section className={`${styles.just_section}`}>
 					<img
 						src={GreenWaveTop.src}
