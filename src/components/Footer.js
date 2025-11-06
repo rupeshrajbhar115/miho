@@ -29,11 +29,11 @@ export default function Footer() {
 					<p>© {new Date().getFullYear()} MIHO</p>
 					<div className={`${styles.social_media}`}>
 						<ul>
-							<li>
+							{/* <li>
 								<a href="">
 									<img src={faceBook.src} alt="facebook" />
 								</a>
-							</li>
+							</li> */}
 							<li>
 								<a href="">
 									<img src={instagram.src} alt="facebook" />
@@ -44,11 +44,11 @@ export default function Footer() {
 									<img src={YouTube.src} alt="facebook" />
 								</a>
 							</li>
-							<li>
+							{/* <li>
 								<a href="">
 									<img src={twitter.src} alt="facebook" />
 								</a>
-							</li>
+							</li> */}
 							<li>
 								<a href="">
 									<img src={Link.src} alt="facebook" />

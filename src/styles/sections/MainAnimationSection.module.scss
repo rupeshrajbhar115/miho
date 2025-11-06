@@ -413,9 +413,15 @@
                         justify-content: space-between;
                         .one{
                             padding-top: 20px;
+                            animation: moveTop 2s ease-in-out infinite alternate;
+                        }
+                        .two{
+                            margin-top: -40px;
+                            animation: moveTop 2s ease-in-out infinite alternate;
                         }
                         .three{
                             margin-top: -70px;
+                            animation: moveTop 2s ease-in-out infinite alternate;
                         }
                         .SmallCircles1{
                             top: 100px;

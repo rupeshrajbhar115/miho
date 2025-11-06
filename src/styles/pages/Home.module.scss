@@ -583,7 +583,7 @@
 			background-image: url(../../../public/img/home/connect_bg.png);
 			@media (min-width: 1201px) and (max-width: 1680px) {
 				height: 210px;
-				top: -90px;
+				top: -102px;
 			}
 		}
 		.connect {
@@ -618,6 +618,10 @@
 			.connect_form {
 				width: 42%;
 				position: relative;
+				h2{
+					z-index: 2;
+					position: relative;
+				}
 				&::after{
 					content: "";
 					position: absolute;

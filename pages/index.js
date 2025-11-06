@@ -293,9 +293,9 @@ export default function HomePage() {
 						<div className={`${styles.left_right_section} toTop`} data-scroll>
 							<div className={`${styles.left_section}`}>
 								<h2 className="section_big_title">
-									<span>Not soju.</span>
+									<span>Made For</span>
 									<br />
-									<span>Just MiHO.</span>
+									<span>Moments</span>
 								</h2>
 								<p>Every bottle opens a story worth sharing.</p>
 								<img
@@ -659,7 +659,7 @@ export default function HomePage() {
 									<span>Find Your MiHO.</span>
 								</h2>
 								<h6 className="toTop" data-scroll>
-									Everything About MIHO Soju” (MIHOw)
+									Find MiHO at your nearest Store.
 								</h6>
 								<div className={styles.find_img}>
 									<img

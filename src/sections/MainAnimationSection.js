@@ -912,24 +912,22 @@ export default function MainAnimationSection() {
 								into a story. It&lsquo;s not about drinking hard; it&lsquo;s about
 								living light — it&lsquo;s all about shared laughs, fun games, late-night
 								gossip, and that one friend who always says &lsquo;just one more!&lsquo;
-								MIHO celebrates playful connect sessions over binges. Sip it, share it,
-								shoot it — every sip is MIHO-licious.
 							</div>
 						</div>
 						<div className={styles.desc_section_wrapper}>
 							<div className={styles.desc_section}>
-								<div className={styles.para2}>
+								{/* <div className={styles.para2}>
 									It&lsquo;s not about drinking hard; it&lsquo;s about living light —
 									it&lsquo;s all about shared laughs, fun games, late-night gossip, and
 									that one friend who always says just one more!
-								</div>
+								</div> */}
+								<div className={styles.para2}>Sip it, share it, shoot it</div>
 								<h2 className={`${styles.title_anima_circle} section_big_title`}>
 									<span>
-										Sip it, share it,
-										<br /> shoot it
+										Every Sip is
+										<br /> MIHO-licious.
 									</span>
 								</h2>
-								<div className={styles.para2}>every sip is MIHO-licious.</div>
 							</div>
 						</div>
 						<div className={styles.img_section_animation}>
@@ -1019,11 +1017,11 @@ export default function MainAnimationSection() {
 
 					<div className={styles.text_section}>
 						<div className={styles.title_animation}>
-							<div className={styles.one}>
+							{/* <div className={styles.one}>
 								<h2 className="section_big_title">
 									<span>Indian-Made. </span>
 								</h2>
-							</div>
+							</div> */}
 							<div className={styles.two}>
 								<h2 className="section_big_title">
 									<span>K-Wave Inspired.</span>
@@ -1038,11 +1036,12 @@ export default function MainAnimationSection() {
 								<p>
 									MIHO blends the heart of India with the soul of Korean culture. Born
 									out of a love for culture, friendship, and feel-good fun, it’s drink
-									that flips the script. Smooth and full of flavour, MIHO is designed for
-									those who crave style without excess. We’re not chasing wild nights;
-									we’re embracing mellow vibes. Stylish, inclusive, and totally
-									unpretentious — MIHO Soju is for those who believe life’s best moments
-									are the ones you can remember.
+									that flips the script. <br />
+									Smooth and full of flavour, MIHO is designed for those who crave style
+									without excess. We’re not chasing wild nights; we’re embracing mellow
+									vibes. <br /> Stylish, inclusive, and totally unpretentious — MIHO Soju
+									is for those who believe life’s best moments are the ones you can
+									remember.
 								</p>
 							</div>
 						</div>

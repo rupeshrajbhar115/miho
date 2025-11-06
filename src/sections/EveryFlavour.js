@@ -259,11 +259,11 @@ export default function EveryFlavour() {
 							className={`section_big_title ${styles.text_animation} toTop`}
 							data-scroll
 						>
-							<span className={styles.left_img}>Every Flavour,</span>
+							<span className={styles.left_img}>Every Flavour, Loves</span>{" "}
+							<span className={styles.right_img}>a Mood.</span>
 							<div className={styles.text_animation_inner}>
 								<img src={Mood.src} alt="image" className="img-responsive" />
 							</div>
-							<span className={styles.right_img}>a Mood.</span>
 						</div>
 						<h6 className="toTop" data-scroll>
 							Soft on the senses. Big on personality.
@@ -284,9 +284,13 @@ export default function EveryFlavour() {
 							<span className={`${styles.span1}`}>Berry</span>
 							<span className={`${styles.span2}`}>sun</span>
 						</div>
-						<div className={`${styles.text_left}`}>
-							<span className={`${styles.span1}`}>Bliss</span>
-							<span className={`${styles.span2}`}>Daze</span>
+						<div className={`${styles.text_left} ${styles.text_right}`}>
+							<span className={`${styles.span1}`}>
+								<span>Bliss</span> <p>Sweet, happy, and a little flirty.</p>
+							</span>
+							<span className={`${styles.span2}`}>
+								<span>Daze</span> <p>Zesty, bright, and sunshine in a sip.</p>
+							</span>
 						</div>
 					</div>
 
