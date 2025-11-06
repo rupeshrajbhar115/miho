@@ -684,7 +684,7 @@ export default function MainAnimationSection() {
 				`.${styles.RedWaveTop}`,
 				{
 					delay: "0.6",
-					top: "-90px",
+					top: "-88px",
 				},
 				"11th"
 			)
@@ -747,7 +747,7 @@ export default function MainAnimationSection() {
 				`.${styles.span1}`,
 				{
 					duration: 1,
-					transform: "translateY(0%)",
+					transform: "translateY(-5%)",
 				},
 				"13th"
 			)
@@ -771,7 +771,7 @@ export default function MainAnimationSection() {
 				`.${styles.span1}`,
 				{
 					duration: 1,
-					transform: "translateX(-100%)",
+					transform: "translateX(-105%)",
 				},
 				"14th"
 			)
@@ -779,7 +779,7 @@ export default function MainAnimationSection() {
 				`.${styles.span2}`,
 				{
 					duration: 1,
-					transform: "translateX(-100%)",
+					transform: "translateX(-105%)",
 				},
 				"14th"
 			)
@@ -1266,12 +1266,14 @@ export default function MainAnimationSection() {
 								<p>
 									MIHO blends the heart of India with the soul of Korean culture. Born
 									out of a love for culture, friendship, and feel-good fun, it’s drink
-									that flips the script. <br />
-									Smooth and full of flavour, MIHO is designed for those who crave style
-									without excess. We’re not chasing wild nights; we’re embracing mellow
-									vibes. <br /> Stylish, inclusive, and totally unpretentious — MIHO Soju
-									is for those who believe life’s best moments are the ones you can
-									remember.
+									that flips the script.
+									<span className={styles.br_padd}>
+										Smooth and full of flavour, MIHO is designed for those who crave style
+										without excess. We’re not chasing wild nights; we’re embracing mellow
+										vibes.
+									</span>{" "}
+									Stylish, inclusive, and totally unpretentious — MIHO Soju is for those
+									who believe life’s best moments are the ones you can remember.
 								</p>
 							</div>
 						</div>

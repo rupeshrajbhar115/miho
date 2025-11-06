@@ -553,9 +553,10 @@
 			.faq_desc{
 				width: 48%;
 				display: flex;
+				flex-wrap: wrap;
 				justify-content: space-between;
 				p{
-					width: 65%;
+					width: 100%;
 					color: #FFF;
 					font-size: 26px;
 					font-style: normal;

@@ -552,6 +552,10 @@
                         overflow: hidden;
                         p{
                             transform: translateY(100%);
+                            .br_padd{
+                                display: block;
+                                margin: 10px 0;
+                            }
                         }
                     }
                 }
@@ -663,14 +667,14 @@
                             }
                             .span1{
                                 display: block;
-                                transform: translateX(120%);
+                                transform: translateX(150%);
                                 span{
                                     display: block;
                                     line-height: 225px;
                                 }
                                 p{
                                     color: #fff;
-                                    font-size: 16px;
+                                    font-size: 17px;
                                     padding-left: 6px;
                                     text-align: left;
                                     text-transform: capitalize;
@@ -679,14 +683,14 @@
                             }
                             .span2{
                                 display: block;
-                                transform: translateX(20%);
+                                transform: translateX(50%);
                                 span{
                                     display: block;
                                     line-height: 225px;
                                 }
                                 p{
                                     color: #fff;
-                                    font-size: 16px;
+                                    font-size: 17px;
                                     padding-left: 6px;
                                     text-align: left;
                                     text-transform: capitalize;
