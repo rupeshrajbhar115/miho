@@ -320,14 +320,21 @@ export default function MainAnimationSection() {
 			.to(
 				".GreenBottleAnimationNew",
 				{
-					opacity: "1",
+					display: "block",
+				},
+				"2nd"
+			)
+			.to(
+				".GreenBottleAnimationNew model-viewer",
+				{
+					cameraOrbit: "1265deg 0 2m",
 				},
 				"2nd"
 			)
 			.to(
 				".left_bottle_anima",
 				{
-					opacity: "0",
+					display: "none",
 				},
 				"2nd"
 			)
@@ -444,7 +451,7 @@ export default function MainAnimationSection() {
 				".GreenBottleAnimationNew",
 				{
 					delay: "0.2",
-					opacity: "0",
+					display: "none",
 				},
 				"4th"
 			)
@@ -556,6 +563,7 @@ export default function MainAnimationSection() {
 				`.${styles.Flovare1}`,
 				{
 					scale: "1",
+					opacity: "1",
 				},
 				"10th"
 			)
@@ -563,6 +571,7 @@ export default function MainAnimationSection() {
 				`.${styles.Flovare2}`,
 				{
 					scale: "1",
+					opacity: "1",
 				},
 				"10th"
 			)
@@ -570,12 +579,14 @@ export default function MainAnimationSection() {
 				`.${styles.Flovare3}`,
 				{
 					scale: "1",
+					opacity: "1",
 				},
 				"10th"
 			)
 			.to(
 				`.${styles.Mood}`,
 				{
+					opacity: "1",
 					scale: "1",
 				},
 				"10th"
@@ -584,6 +595,7 @@ export default function MainAnimationSection() {
 				`.${styles.Flovare4}`,
 				{
 					scale: "1",
+					opacity: "1",
 				},
 				"10th"
 			)
@@ -758,7 +770,7 @@ export default function MainAnimationSection() {
 					<div className={`${styles.left_bottle} left_bottle_anima`}>
 						<model-viewer
 							ref={modelRef}
-							src="/img/3d/SunDaze.glb"
+							src="/img/3d/BerryBliss.glb"
 							alt="3D Bottle"
 							ar-modes="webxr scene-viewer quick-look"
 							camera-controls
@@ -768,6 +780,18 @@ export default function MainAnimationSection() {
 							interaction-prompt="none"
 							className="modelViewer"
 						></model-viewer>
+						{/* <model-viewer
+							ref={modelRef}
+							src="/img/3d/SunDaze.glb"
+							alt="3D Bottle"
+							ar-modes="webxr scene-viewer quick-look"
+							camera-controls
+							camera-orbit="0deg 85deg 2m"
+							shadow-intensity="1"
+							disable-zoom
+							className={`${styles.SunDaze} modelViewer`}
+							interaction-prompt="none"
+						></model-viewer> */}
 					</div>
 					{/* <img
 						src={redBottleAnima.src}

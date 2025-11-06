@@ -269,7 +269,7 @@ export default function HomePage() {
 		<div>
 			{/* Metatags */}
 			<MetaTags Title={"Home"} Desc={"Home Desc"} OgImg={""} Url={"/"} />
-			<Loader />
+			{/* <Loader /> */}
 
 			{/* Header */}
 			<Header />

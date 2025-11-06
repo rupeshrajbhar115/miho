@@ -6,11 +6,37 @@
         height: 100vh;
         padding: 130px 4vw 100px 4vw;
         position: relative;
+        /* Keyframes */
+        @keyframes moveRight {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(60px);
+            }
+        }
+        @keyframes moveTop {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(60px);
+            }
+        }
+        @keyframes moveScale {
+            0% {
+                transform: scale(0.8);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
         .bannerVector4{
-            top: 150px;
+            top: 50px;
             right: 0;
             position: absolute;
             transform: scale(0);
+            animation: moveTop 2s ease-in-out infinite alternate;
         }
         &::after{
             content: "";
@@ -67,28 +93,33 @@
                 height: calc(100vh - 230px);
                 position: relative;
                 .BannerLeaf{
-                    top: 50%;
-                    left: 50%;
+                    top: 10%;
+                    left: 0%;
                     opacity: 0;
                     position: absolute;
                     transform: translate(-50%, -50%);
+                    animation: moveScale 2s ease-in-out infinite alternate;
                 }
                 .bannerVector1{
-                    top: 54%;
+                    top: 24%;
                     left: -50px;
                     position: absolute;
                     transform: translateY(-50%) scale(0);
+                    animation: moveTop 2s ease-in-out infinite alternate;
                 }
                 .bannerVector2{
                     left: -210px;
                     bottom: -30px;
                     position: absolute;
                     transform: scale(0);
+                    animation: moveRight 2s ease-in-out infinite alternate;
                 }
                 .bannerVector3{
                     right: -80px;
                     bottom: 0px;
-                    position: absolute;transform: scale(0);
+                    position: absolute;
+                    transform: scale(0);
+                    animation: moveRight 2s ease-in-out infinite alternate;
                 }
                 .bottle{
                     position: relative;
@@ -269,13 +300,14 @@
                     left: 50%;
                     position: absolute;
                     transform: translate(-50%, -50%);
+
                 }
             }
         }
         .GreenBottleAnimationNew{
             top: 53.5%;
             left: 50%;
-            opacity: 0;
+            display: none;
             position: absolute;
             transform: translate(-50%, -50%) rotate(15deg);
             model-viewer{
@@ -409,6 +441,7 @@
                 top: 100px;
                 left: -50px;
                 position: absolute;
+                animation: moveRight 2s ease-in-out infinite alternate;
             }
             .CenterLine{
                 top: 50%;
@@ -416,6 +449,7 @@
                 opacity: 0;
                 position: absolute; 
                 transform: translate(-50%, -50%);
+                animation: moveRight 2s ease-in-out infinite alternate;
             }
             .RightLine{
                 top: 35%;
@@ -424,6 +458,7 @@
                 opacity: 0;
                 position: absolute; 
                 transform: translateY(-50%);
+                animation: moveRight 2s ease-in-out infinite alternate;
             }
             .Leaf{
                 opacity: 0;
@@ -433,35 +468,45 @@
                 position: absolute; 
             }
             .Mood{
-                right: 7%;
+                right: 12%;
                 top: 150px;
+                opacity: 0;
                 position: absolute;
                 transform: translateX(-50%) scale(0);
+                animation: moveScale 2s ease-in-out infinite alternate;
             }
             .Flovare1{
                 top: 150px;
                 left: 13%;
+                opacity: 0;
                 position: absolute;
                 transform: translateX(-50%) scale(0);
+                animation: moveScale 2s ease-in-out infinite alternate;
             }
             .Flovare2{
-                top: 42%;
-                left: 28%;
+                top: 30%;
+                left: 23%;
+                opacity: 0;
                 position: absolute;
                 transform: translate(-50%, -50%) scale(0);
+                animation: moveScale 2s ease-in-out infinite alternate;
             }
             .Flovare3{
-                top: 54%;
+                top: 48%;
                 right: 20%;
+                opacity: 0;
                 position: absolute;
                 transform: translate(-50%, -50%) scale(0);
+                animation: moveScale 2s ease-in-out infinite alternate;
             }
             .Flovare4{
                 top: 80px;
                 right: 2%;
                 z-index: 1;
+                opacity: 0;
                 position: absolute;
                 transform: translateX(-50%) scale(0);
+                animation: moveScale 2s ease-in-out infinite alternate;
             }
             .text_section{
                 .title_animation{
