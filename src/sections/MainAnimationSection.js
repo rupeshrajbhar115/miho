@@ -188,7 +188,7 @@ export default function MainAnimationSection() {
 			.to(
 				".left_bottle_anima",
 				{
-					top: "54%",
+					top: "53%",
 					left: "50%",
 				},
 				"1st"
@@ -784,48 +784,54 @@ export default function MainAnimationSection() {
 				"14th"
 			)
 			.to(
-				`.${styles.GreenVector1}`,
+				`.${styles.GreenVector11}`,
 				{
 					top: "30%",
 					duration: 1,
+					opacity: 1,
 				},
 				"14th"
 			)
 			.to(
-				`.${styles.GreenVector2}`,
+				`.${styles.GreenVector21}`,
 				{
 					top: "20%",
 					duration: 1,
+					opacity: 1,
 				},
 				"14th"
 			)
 			.to(
-				`.${styles.GreenVector3}`,
+				`.${styles.GreenVector31}`,
 				{
 					bottom: "10%",
+					opacity: 1,
 					duration: 0.6,
 				},
 				"14th"
 			)
 			.to(
-				`.${styles.GreenVector4}`,
+				`.${styles.GreenVector41}`,
 				{
 					bottom: "20%",
+					opacity: 1,
 					duration: 1,
 				},
 				"14th"
 			)
 			.to(
-				`.${styles.GreenVector5}`,
+				`.${styles.GreenVector51}`,
 				{
 					top: "15%",
 					duration: 1,
+					opacity: 1,
 				},
 				"14th"
 			)
 			.to(
-				`.${styles.GreenVector6}`,
+				`.${styles.GreenVector61}`,
 				{
+					opacity: 1,
 					bottom: "0%",
 					duration: 1,
 				},
@@ -1378,32 +1384,32 @@ export default function MainAnimationSection() {
 							<img
 								src={GreenVector1.src}
 								alt="image"
-								className={`${styles.GreenVector1} img-responsive`}
+								className={`${styles.GreenVector11} img-responsive`}
 							/>
 							<img
 								src={GreenVector2.src}
 								alt="image"
-								className={`${styles.GreenVector2} img-responsive`}
+								className={`${styles.GreenVector21} img-responsive`}
 							/>
 							<img
 								src={GreenVector3.src}
 								alt="image"
-								className={`${styles.GreenVector3} img-responsive`}
+								className={`${styles.GreenVector31} img-responsive`}
 							/>
 							<img
 								src={GreenVector4.src}
 								alt="image"
-								className={`${styles.GreenVector4} img-responsive`}
+								className={`${styles.GreenVector41} img-responsive`}
 							/>
 							<img
 								src={GreenVector5.src}
 								alt="image"
-								className={`${styles.GreenVector5} img-responsive`}
+								className={`${styles.GreenVector51} img-responsive`}
 							/>
 							<img
 								src={GreenVector6.src}
 								alt="image"
-								className={`${styles.GreenVector6} img-responsive`}
+								className={`${styles.GreenVector61} img-responsive`}
 							/>
 						</div>
 						<div className={`${styles.flavour_section_2}`}>
