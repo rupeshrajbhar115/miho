@@ -65,6 +65,9 @@ import RedVector4 from "../../public/img/home/RedVector4.png";
 import RedVector5 from "../../public/img/home/RedVector5.png";
 import RedVector6 from "../../public/img/home/RedVector6.png";
 import GreenVector6 from "../../public/img/home/GreenVector6.png";
+import Heand from "../../public/img/home/heand.svg";
+import Love1 from "../../public/img/home/love1.png";
+import Love2 from "../../public/img/home/love2.png";
 
 // DATA //
 
@@ -320,6 +323,16 @@ export default function MainAnimationSection() {
 				},
 				"2nd"
 			)
+			.fromTo(
+				".left_bottle_anima model-viewer",
+				{
+					cameraOrbit: "545deg 0 2m",
+				},
+				{
+					cameraOrbit: "900deg 0 2m",
+				},
+				"2nd"
+			)
 			.to(
 				".GreenBottleAnimationNew model-viewer",
 				{
@@ -494,6 +507,7 @@ export default function MainAnimationSection() {
 			.to(
 				`.${styles.para}`,
 				{
+					duration: 1,
 					transform: "translateY(0%)",
 				},
 				"7th"
@@ -501,13 +515,15 @@ export default function MainAnimationSection() {
 			.to(
 				`.${styles.img_section}`,
 				{
-					transform: "translateY(0%)",
+					duration: 1,
+					transform: "translateY(-10%)",
 				},
 				"7th"
 			)
 			.to(
 				`.${styles.img_section}`,
 				{
+					duration: 1,
 					transform: "translateY(100%)",
 				},
 				"8th"
@@ -515,6 +531,7 @@ export default function MainAnimationSection() {
 			.to(
 				`.${styles.para}`,
 				{
+					duration: 1,
 					transform: "translateY(-100%)",
 				},
 				"8th"
@@ -522,7 +539,7 @@ export default function MainAnimationSection() {
 			.to(
 				`.${styles.desc_section}`,
 				{
-					delay: "0.4",
+					delay: "0.8",
 					transform: "translateY(0%)",
 				},
 				"8th"
@@ -677,6 +694,22 @@ export default function MainAnimationSection() {
 				{
 					delay: "0.3",
 					transform: "translateY(0%)",
+				},
+				"11th"
+			)
+			.to(
+				`.${styles.love1}`,
+				{
+					delay: "1",
+					opacity: 1,
+				},
+				"11th"
+			)
+			.to(
+				`.${styles.love2}`,
+				{
+					delay: "1",
+					opacity: 1,
 				},
 				"11th"
 			)
@@ -1302,7 +1335,17 @@ export default function MainAnimationSection() {
 									<span className={styles.left_img}>Every Flavour, Loves</span>{" "}
 									<span className={styles.right_img}>a Mood.</span>
 									<div className={styles.text_animation_inner}>
-										<img src={Mood.src} alt="image" className="img-responsive" />
+										<img src={Heand.src} alt="image" className="img-responsive" />
+										<img
+											src={Love1.src}
+											alt="image"
+											className={`${styles.love1} img-responsive`}
+										/>
+										<img
+											src={Love2.src}
+											alt="image"
+											className={`${styles.love2} img-responsive`}
+										/>
 									</div>
 								</div>
 								<h6>Soft on the senses. Big on personality.</h6>
