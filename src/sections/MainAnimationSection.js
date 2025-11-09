@@ -1327,7 +1327,7 @@ export default function MainAnimationSection() {
 					</div>
 				</div>
 
-				<div className={`${styles.top_text_section}`}>
+				<div className={`${styles.top_text_section}`} id="taste">
 					<div className={`${styles.text_section_flavour_wrapper}`}>
 						<div className={`${styles.text_section_flavour_main}`}>
 							<div className={`${styles.text_section_flavour_inner}`}>
