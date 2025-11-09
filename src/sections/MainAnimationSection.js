@@ -945,7 +945,7 @@ export default function MainAnimationSection() {
 				src="https://cdn.jsdelivr.net/npm/@google/model-viewer@3.3.0/dist/model-viewer.min.js"
 				strategy="beforeInteractive"
 			/>
-			<div className={styles.banner_section}>
+			<div className={styles.banner_section} id="home">
 				<img
 					src={bannerVector4.src}
 					alt="image"

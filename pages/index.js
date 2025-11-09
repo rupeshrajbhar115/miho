@@ -276,7 +276,7 @@ export default function HomePage() {
 
 			{/* Page Content starts here */}
 			<main className={`${styles.HomePage}`}>
-				<div id="home">{/* <MainAnimationSection /> */}</div>
+				<MainAnimationSection />
 				{/* <IndianMade /> */}
 				{/* <div id="taste">
 					<EveryFlavour />
