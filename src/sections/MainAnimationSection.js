@@ -110,7 +110,7 @@ export default function MainAnimationSection() {
 		let AnimaCircle1 = "scale(7)";
 		let RedWaveTop = "-88px";
 		if (window.innerWidth >= 0 && window.innerWidth <= 767) {
-			LeftBottleAnima = "180px";
+			LeftBottleAnima = "140px";
 			AnimaCircle = "scale(9)";
 			AnimaCircle1 = "scale(12)";
 			RedWaveTop = "-22px";
@@ -229,7 +229,7 @@ export default function MainAnimationSection() {
 			.to(
 				`.${styles.title_anima}`,
 				{
-					// duration: 1,
+					duration: 1,
 					transform: "translateY(0%)",
 				},
 				"1st"
@@ -237,7 +237,7 @@ export default function MainAnimationSection() {
 			.to(
 				`.${styles.AnimaVector1}`,
 				{
-					// duration: 1,
+					duration: 1,
 					left: "35%",
 					opacity: "1",
 					bottom: "40%",
@@ -247,7 +247,7 @@ export default function MainAnimationSection() {
 			.to(
 				`.${styles.AnimaVector2}`,
 				{
-					// duration: 1,
+					duration: 1,
 					left: "42%",
 					opacity: "1",
 					bottom: "5%",
@@ -257,7 +257,7 @@ export default function MainAnimationSection() {
 			.to(
 				`.${styles.AnimaVector3}`,
 				{
-					// duration: 1,
+					duration: 1,
 					left: "55%",
 					opacity: "1",
 					bottom: "10%",
@@ -267,7 +267,7 @@ export default function MainAnimationSection() {
 			.to(
 				`.${styles.AnimaVector4}`,
 				{
-					// duration: 1,
+					duration: 1,
 					left: "67%",
 					opacity: "1",
 					bottom: "32%",
@@ -277,7 +277,7 @@ export default function MainAnimationSection() {
 			.to(
 				`.${styles.AnimaVector5}`,
 				{
-					// duration: 1,
+					duration: 1,
 					left: "65%",
 					opacity: "1",
 					bottom: "43%",
@@ -287,7 +287,7 @@ export default function MainAnimationSection() {
 			.to(
 				`.${styles.AnimaVector1}`,
 				{
-					// duration: 1,
+					duration: 1,
 					left: "50%",
 					opacity: "0",
 					bottom: "0%",
@@ -297,7 +297,7 @@ export default function MainAnimationSection() {
 			.to(
 				`.${styles.AnimaVector2}`,
 				{
-					// duration: 1,
+					duration: 1,
 					left: "50%",
 					opacity: "0",
 					bottom: "0%",
@@ -307,7 +307,7 @@ export default function MainAnimationSection() {
 			.to(
 				`.${styles.AnimaVector3}`,
 				{
-					// duration: 1,
+					duration: 1,
 					left: "50%",
 					opacity: "0",
 					bottom: "0%",
@@ -317,7 +317,7 @@ export default function MainAnimationSection() {
 			.to(
 				`.${styles.AnimaVector4}`,
 				{
-					// duration: 1,
+					duration: 1,
 					left: "50%",
 					opacity: "0",
 					bottom: "0%",
@@ -327,7 +327,7 @@ export default function MainAnimationSection() {
 			.to(
 				`.${styles.AnimaVector5}`,
 				{
-					// duration: 1,
+					duration: 1,
 					left: "50%",
 					opacity: "0",
 					bottom: "0%",
@@ -368,7 +368,7 @@ export default function MainAnimationSection() {
 			.to(
 				`.${styles.GreenVector1}`,
 				{
-					// duration: 1,
+					duration: 1,
 					left: "35%",
 					opacity: "1",
 					bottom: "40%",
@@ -378,7 +378,7 @@ export default function MainAnimationSection() {
 			.to(
 				`.${styles.GreenVector2}`,
 				{
-					// duration: 1,
+					duration: 1,
 					left: "35%",
 					opacity: "1",
 					bottom: "-5%",
@@ -388,7 +388,7 @@ export default function MainAnimationSection() {
 			.to(
 				`.${styles.GreenVector3}`,
 				{
-					// duration: 1,
+					duration: 1,
 					left: "65%",
 					opacity: "1",
 					bottom: "10%",
@@ -398,7 +398,7 @@ export default function MainAnimationSection() {
 			.to(
 				`.${styles.GreenVector4}`,
 				{
-					// duration: 1,
+					duration: 1,
 					left: "67%",
 					opacity: "1",
 					bottom: "45%",
@@ -408,7 +408,7 @@ export default function MainAnimationSection() {
 			.to(
 				`.${styles.GreenVector5}`,
 				{
-					// duration: 1,
+					duration: 1,
 					left: "65%",
 					opacity: "1",
 					bottom: "43%",
@@ -418,7 +418,7 @@ export default function MainAnimationSection() {
 			.to(
 				`.${styles.GreenVector1}`,
 				{
-					// duration: 1,
+					duration: 1,
 					left: "50%",
 					opacity: "0",
 					bottom: "0%",
@@ -428,7 +428,7 @@ export default function MainAnimationSection() {
 			.to(
 				`.${styles.GreenVector2}`,
 				{
-					// duration: 1,
+					duration: 1,
 					left: "50%",
 					opacity: "0",
 					bottom: "0%",
@@ -438,7 +438,7 @@ export default function MainAnimationSection() {
 			.to(
 				`.${styles.GreenVector3}`,
 				{
-					// duration: 1,
+					duration: 1,
 					left: "50%",
 					opacity: "0",
 					bottom: "0%",
@@ -448,7 +448,7 @@ export default function MainAnimationSection() {
 			.to(
 				`.${styles.GreenVector4}`,
 				{
-					// duration: 1,
+					duration: 1,
 					left: "50%",
 					opacity: "0",
 					bottom: "0%",
@@ -458,7 +458,7 @@ export default function MainAnimationSection() {
 			.to(
 				`.${styles.GreenVector5}`,
 				{
-					// duration: 1,
+					duration: 1,
 					left: "50%",
 					opacity: "0",
 					bottom: "0%",
@@ -468,7 +468,7 @@ export default function MainAnimationSection() {
 			.to(
 				`.${styles.title_anima}`,
 				{
-					// duration: 1,
+					duration: 1,
 					opacity: "0",
 					transform: "translateY(100%)",
 				},
@@ -479,13 +479,14 @@ export default function MainAnimationSection() {
 				{
 					delay: "0.2",
 					display: "none",
+					duration: 1,
 				},
 				"4th"
 			)
 			.to(
 				`.${styles.AnimaCircle}`,
 				{
-					// duration: 2,
+					duration: 1,
 					transform: AnimaCircle,
 				},
 				"6th"
@@ -493,7 +494,7 @@ export default function MainAnimationSection() {
 			.to(
 				`.${styles.LeftHeand}`,
 				{
-					// duration: 1,
+					duration: 1,
 					left: "0",
 				},
 				"6th"
@@ -501,7 +502,7 @@ export default function MainAnimationSection() {
 			.to(
 				`.${styles.RightHeand}`,
 				{
-					// duration: 1,
+					duration: 1,
 					right: "0",
 				},
 				"6th"
@@ -509,7 +510,7 @@ export default function MainAnimationSection() {
 			.to(
 				`.${styles.LeftHeand}`,
 				{
-					// duration: 1,
+					duration: 1,
 					left: "-25%",
 				},
 				"7th"
@@ -517,7 +518,7 @@ export default function MainAnimationSection() {
 			.to(
 				`.${styles.RightHeand}`,
 				{
-					// duration: 1,
+					duration: 1,
 					right: "-25%",
 				},
 				"7th"
@@ -559,6 +560,7 @@ export default function MainAnimationSection() {
 				{
 					delay: "0.8",
 					transform: "translateY(0%)",
+					duration: 1,
 				},
 				"8th"
 			)
@@ -566,6 +568,7 @@ export default function MainAnimationSection() {
 				`.${styles.AnimaCircle}`,
 				{
 					transform: AnimaCircle1,
+					duration: 1,
 				},
 				"9th"
 			)
@@ -573,6 +576,7 @@ export default function MainAnimationSection() {
 				`.${styles.LeftHeand}`,
 				{
 					left: "-100%",
+					duration: 1,
 				},
 				"9th"
 			)
@@ -580,6 +584,7 @@ export default function MainAnimationSection() {
 				`.${styles.RightHeand}`,
 				{
 					right: "-100%",
+					duration: 1,
 				},
 				"9th"
 			)
@@ -587,6 +592,7 @@ export default function MainAnimationSection() {
 				`.${styles.desc_section}`,
 				{
 					transform: "translateY(100%)",
+					duration: 1,
 				},
 				"9th"
 			)
@@ -595,6 +601,7 @@ export default function MainAnimationSection() {
 				{
 					scale: "1",
 					opacity: "1",
+					duration: 1,
 				},
 				"10th"
 			)
@@ -603,6 +610,7 @@ export default function MainAnimationSection() {
 				{
 					scale: "1",
 					opacity: "1",
+					duration: 1,
 				},
 				"10th"
 			)
@@ -611,6 +619,7 @@ export default function MainAnimationSection() {
 				{
 					scale: "1",
 					opacity: "1",
+					duration: 1,
 				},
 				"10th"
 			)
@@ -619,6 +628,7 @@ export default function MainAnimationSection() {
 				{
 					opacity: "1",
 					scale: "1",
+					duration: 1,
 				},
 				"10th"
 			)
@@ -627,6 +637,7 @@ export default function MainAnimationSection() {
 				{
 					scale: "1",
 					opacity: "1",
+					duration: 1,
 				},
 				"10th"
 			)
@@ -635,6 +646,7 @@ export default function MainAnimationSection() {
 				{
 					opacity: "1",
 					right: "0",
+					duration: 1,
 				},
 				"10th"
 			)
@@ -643,6 +655,7 @@ export default function MainAnimationSection() {
 				{
 					left: "0",
 					opacity: 1,
+					duration: 1,
 				},
 				"10th"
 			)
@@ -651,6 +664,7 @@ export default function MainAnimationSection() {
 				{
 					right: "0",
 					opacity: 1,
+					duration: 1,
 				},
 				"10th"
 			)
@@ -665,6 +679,7 @@ export default function MainAnimationSection() {
 				`.${styles.bottom_img}`,
 				{
 					transform: "translateY(10%)",
+					duration: 1,
 				},
 				"10th"
 			)
@@ -673,6 +688,7 @@ export default function MainAnimationSection() {
 				{
 					delay: "0.4",
 					transform: "translateY(0%)",
+					duration: 1,
 				},
 				"10th"
 			)
@@ -681,6 +697,7 @@ export default function MainAnimationSection() {
 				{
 					delay: "0.4",
 					transform: "translateY(0%)",
+					duration: 1,
 				},
 				"10th"
 			)
@@ -689,6 +706,7 @@ export default function MainAnimationSection() {
 				{
 					delay: "0.4",
 					transform: "translateY(0%)",
+					duration: 1,
 				},
 				"10th"
 			)
@@ -697,6 +715,7 @@ export default function MainAnimationSection() {
 				{
 					delay: "0.4",
 					transform: "translateY(0%)",
+					duration: 1,
 				},
 				"10th"
 			)
@@ -712,6 +731,7 @@ export default function MainAnimationSection() {
 				{
 					delay: "0.3",
 					transform: "translateY(0%)",
+					duration: 1,
 				},
 				"11th"
 			)
@@ -720,6 +740,7 @@ export default function MainAnimationSection() {
 				{
 					delay: "1",
 					opacity: 1,
+					duration: 1,
 				},
 				"11th"
 			)
@@ -728,6 +749,7 @@ export default function MainAnimationSection() {
 				{
 					delay: "1",
 					opacity: 1,
+					duration: 1,
 				},
 				"11th"
 			)
@@ -736,6 +758,7 @@ export default function MainAnimationSection() {
 				{
 					delay: "0.6",
 					top: RedWaveTop,
+					duration: 1,
 				},
 				"11th"
 			)
@@ -743,6 +766,7 @@ export default function MainAnimationSection() {
 				`.${styles.EveryFlavour}`,
 				{
 					transform: "translateY(0%)",
+					duration: 1,
 				},
 				"12th"
 			)
