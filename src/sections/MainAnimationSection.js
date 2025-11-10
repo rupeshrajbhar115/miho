@@ -110,7 +110,7 @@ export default function MainAnimationSection() {
 		let AnimaCircle1 = "scale(7)";
 		let RedWaveTop = "-88px";
 		if (window.innerWidth >= 0 && window.innerWidth <= 767) {
-			LeftBottleAnima = "220px";
+			LeftBottleAnima = "180px";
 			AnimaCircle = "scale(9)";
 			AnimaCircle1 = "scale(12)";
 			RedWaveTop = "-22px";

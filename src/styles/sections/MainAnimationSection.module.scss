@@ -7,7 +7,7 @@
         padding: 130px 4vw 100px 4vw;
         position: relative;
         @media (max-width: 767px) {
-            padding: 100px 15px 15px 15px;
+            padding: 60px 15px 15px 15px;
         }
         /* Keyframes */
         @keyframes moveRight {
@@ -115,8 +115,8 @@
                         transform: translateY(100%);
                         @media (max-width: 767px) {
                             width: 100%;
-                            font-size: 28px;
-                            line-height: 30px;
+                            font-size: 24px;
+                            line-height: 28px;
                         }
                     }
                 }
@@ -182,7 +182,7 @@
                             overflow: hidden;
                             pointer-events: auto;
                             @media (max-width: 767px) {
-                                width: 180px;
+                                width: 140px;
                             }
                         }
                     }
@@ -203,7 +203,7 @@
                         transform: rotate(35deg);
                         @media (max-width: 767px) {
                             right: 10px;
-                            top: -70px;
+                            top: -100px;
                         }
                         model-viewer{
                             // position: absolute;
@@ -215,7 +215,7 @@
                             overflow: hidden;
                             pointer-events: auto;
                             @media (max-width: 767px) {
-                                width: 180px;
+                                width: 140px;
                             }
                         }
                         @media (min-width: 1441px) and (max-width: 1920px) {
@@ -276,7 +276,7 @@
                     overflow: hidden;
                     pointer-events: auto;
                     @media (max-width: 767px) {
-                        width: 180px;
+                        width: 140px;
                     }
                 }
             }
@@ -379,7 +379,7 @@
                 overflow: hidden;
                 pointer-events: auto;
                 @media (max-width: 767px) {
-                    width: 220px;
+                    width: 180px;
                 }
             }
         }
@@ -631,7 +631,7 @@
                 .title_animation{
                     text-align: center;
                     @media (max-width: 767px) {
-                        margin-top: 150px;
+                        margin-top: 50px;
                     }
                     .one{
                         overflow: hidden;
@@ -728,7 +728,9 @@
                     .text_section_flavour_inner{
                         transform: translateY(110%);
                          @media (max-width: 767px) {
-                           transform: translateY(180%);
+                            padding: 15px;
+                            text-align: center;
+                            transform: translateY(180%);
                         }
                         .text_animation{
                             display: flex;
@@ -736,7 +738,6 @@
                             justify-content: center;
                             @media (max-width: 767px) {
                                 flex-wrap: wrap;
-                                grid-row-gap: 25px;
                             }
                             .text_animation_inner{
                                 position: relative;
@@ -807,6 +808,15 @@
                         position: relative;
                         justify-content: center;
                         transform: rotate(-11deg);
+                        @media (max-width: 767px) {
+                            margin-left: -10px;
+                            grid-gap: 25%;
+                            padding-top: 0;
+                            height: 70vh;
+                            align-items: center;
+                            margin-left: -5px;
+                            transform: rotate(-9deg);
+                        }
                         .text_left{
                             width: 380px;
                             overflow: hidden;
@@ -819,15 +829,25 @@
                             display: flex;
                             text-transform: uppercase;
                             font-family: var(--font-braked-r);
+                            
                             &.text_right{
                                 padding-top: 40px;
+                                @media (max-width: 767px) {
+                                    padding-top: 60px;
+                                }
                             }
                             .span1{
                                 display: block;
                                 transform: translateX(150%);
+                                @media (max-width: 767px) {
+                                    transform: translateX(180%);
+                                }
                                 span{
                                     display: block;
                                     line-height: 225px;
+                                    @media (max-width: 767px) {
+                                        line-height: 80px;
+                                    }
                                 }
                                 p{
                                     color: #fff;
@@ -836,14 +856,24 @@
                                     text-align: left;
                                     text-transform: capitalize;
                                     font-family: var(--font_primary);
+                                    @media (max-width: 767px) {
+                                        font-size: 14px;
+                                        padding-left: 0;
+                                    }
                                 }
                             }
                             .span2{
                                 display: block;
                                 transform: translateX(50%);
+                                @media (max-width: 767px) {
+                                    transform: translateX(100%);
+                                }
                                 span{
                                     display: block;
                                     line-height: 225px;
+                                    @media (max-width: 767px) {
+                                        line-height: 80px;
+                                    }
                                 }
                                 p{
                                     color: #fff;
@@ -852,6 +882,10 @@
                                     text-align: left;
                                     text-transform: capitalize;
                                     font-family: var(--font_primary);
+                                    @media (max-width: 767px) {
+                                        font-size: 14px;
+                                        padding-left: 0;
+                                    }
                                 }
                             }
                         }
@@ -864,6 +898,9 @@
                             line-height: normal;
                             text-transform: uppercase;
                             font-family: var(--font-braked-r);
+                            @media (max-width: 767px) {
+                                font-size: 80px;
+                            }
                         }
                     }
                     .bottle_section{
@@ -874,7 +911,7 @@
                             position: absolute;
                             transform: translate(-50%, -50%);
                             @media (max-width: 767px) {
-                                width: 180px;
+                                width: 150px;
                             }
                         }
                         .RedBottleAnima{
@@ -969,6 +1006,9 @@
                         z-index: 1;
                         position: absolute;
                         transform: translate(-50%, -50%);
+                        @media (max-width: 767px) {
+                            width: 80px;
+                        }
                     }
                     .GreenVector31{
                         bottom: 100%;
@@ -1027,6 +1067,9 @@
                         padding-top: 150px;
                         justify-content: center;
                         transform: rotate(-11deg);
+                        // @media (max-width: 767px) {
+                        //     grid-gap: 30%;
+                        // }
                         .text_left{
                             color: #FAF8D9;
                             text-align: center;
