@@ -4,6 +4,9 @@
 	overflow: hidden;
 	.just_section{
 		padding: 150px 0 100px 0;
+		@media (max-width: 767px) {
+			padding: 60px 0;
+		}
 		position: relative;
 		.GreenWaveTop{
 			left: 0;
@@ -33,6 +36,9 @@
 		.left_right_section{
 			display: flex;
 			justify-content: space-between;
+			@media (max-width: 767px) {
+				flex-wrap: wrap;
+			}
 			.left_section{
 				width: 49%;
 				height: 450px;
@@ -40,8 +46,16 @@
 				position: relative;
 				border-radius: 12px;
 				background-color: #FED433;
+				@media (max-width: 767px) {
+					width: 100%;
+					height: auto;
+				}
 				h2{
 					line-height: 120px;
+					@media (max-width: 767px) {
+						line-height: 60px;
+						padding-bottom: 10px;
+					}
 				}
 				p{
 					color: #236F00;
@@ -49,17 +63,28 @@
 					font-style: normal;
 					font-weight: 400;
 					line-height: 26px;
+					@media (max-width: 767px) {
+						font-size: 22px;
+						line-height: 24px;
+					}
 				}
 				.fire{
 					top: 50px;
 					left: 65%;
 					position: absolute;
 					transform: translateX(-50%);
+					@media (max-width: 767px) {
+						left: 80%;
+					}
 				}
 				
 			}
 			.right_section{
 				width: 49%;
+				@media (max-width: 767px) {
+					width: 100%;
+					margin-top: 15px;
+				}
 				.navButtons{
 					left: 50px;
 					bottom: 50px;
@@ -141,6 +166,10 @@
 		border-radius: 80px;
 		background-color: #318B30;
 		position: relative;
+		@media (max-width: 767px) {
+			padding: 60px 0;
+			border-radius: 20px;
+		}
 		&::after{
 			content: "";
 			position: absolute;
@@ -228,8 +257,14 @@
 								padding: 30px;
 								align-items: center;
 								justify-content: space-between;
+								@media (max-width: 767px) {
+									padding: 20px 15px;
+								}
 								.item_info{
 									width: calc(100% - 80px);
+									@media (max-width: 767px) {
+										width: calc(100% - 60px);
+									}
 									.time{
 										color: #FFF;
 										font-size: 18px;
@@ -237,6 +272,9 @@
 										font-weight: 400;
 										line-height: 26px;
 										padding-bottom: 10px;
+										@media (max-width: 767px) {
+											font-size: 16px;
+										}
 									}
 									.title{
 										color: #FFF;
@@ -244,6 +282,10 @@
 										font-style: normal;
 										font-weight: 400;
 										line-height: 26px;
+										@media (max-width: 767px) {
+											font-size: 22px;
+											line-height: 24px;
+										}
 									}
 								}
 								.item_arrow{
@@ -301,9 +343,16 @@
 				justify-content: space-between;
 				.big_slider{
 					width: 65%;
+					@media (max-width: 767px) {
+						width: 100%;
+					}
 					.img_info_item{
 						display: flex;
 						height: 450px;
+						@media (max-width: 767px) {
+							height: 350px;
+						}
+
 						.img_item{
 							height: 100%;
 							width: 50%;
@@ -323,6 +372,10 @@
 							background-color: #FED433;
 							border-top-right-radius: 12px;
 							border-bottom-right-radius: 12px;
+							@media (max-width: 767px) {
+								padding: 15px;
+								height: auto;
+							}
 							.date_formet{
 								display: flex;
 								color: #2B8B00;
@@ -334,6 +387,10 @@
 								align-items: flex-end;
 								margin-bottom: 10px;
 								font-family: var(--font-braked-s-b);
+								@media (max-width: 767px) {
+									font-size: 35px;
+									line-height: 30px;
+								}
 							}
 							.desc{
 								color: #000;
@@ -341,17 +398,29 @@
 								font-style: normal;
 								font-weight: 400;
 								line-height: 28px;
+								@media (max-width: 767px) {
+									font-size: 18px;
+									line-height: 24px;
+								}
 							}
 							.MihoArrow{
 								left: 30px;
 								bottom: 30px;
 								position: absolute;
+								@media (max-width: 767px) {
+									left: 15px;
+									bottom: 15px;
+								}
 							}
 						}
 					}
 				}
 				.small_slider{
 					width: 33%;
+					@media (max-width: 767px) {
+						width: 100%;
+						display: none;
+					}
 					.img_item{
 						height: 450px;
 						border-radius: 12px;
@@ -381,6 +450,10 @@
 								align-items: flex-end;
 								margin-bottom: 10px;
 								font-family: var(--font-braked-s-b);
+								@media (max-width: 767px) {
+									font-size: 35px;
+									line-height: 30px;
+								}
 							}
 							.desc{
 								color: #000;
@@ -395,6 +468,10 @@
 								-webkit-box-orient: vertical;
 								overflow: hidden;
 								text-overflow: ellipsis;
+								@media (max-width: 767px) {
+									font-size: 20px;
+									-webkit-line-clamp: 3;
+								}
 							}
 						}
 						.MihoArrow{
@@ -428,8 +505,16 @@
 			padding-top: 80px;
 			margin-bottom: 100px;
 			justify-content: space-between;
+			@media (max-width: 767px) {
+				flex-wrap: wrap;
+				padding-top: 60px;
+				margin-bottom: 60px;
+			}
 			.img_section{
 				width: 45%;
+				@media (max-width: 767px) {
+					width: 100%;
+				}
 				.find_img{
 					margin-top: 20px;
 					img{
@@ -444,10 +529,17 @@
 					font-weight: 500;
 					line-height: 32px;
 					padding-bottom: 10px;
+					@media (max-width: 767px) {
+						font-size: 20px;
+						line-height: 26px;
+					}
 				}
 			}
 			.data_section{
 				width: 52%;
+				@media (max-width: 767px) {
+					width: 100%;
+				}
 				.locationSection {
 					margin-top: 50px;
 					display: flex;
@@ -467,6 +559,9 @@
 					width: 90%;
 					max-width: 500px;
 					justify-content: space-between;
+					@media (max-width: 767px) {
+						width: 100%;
+					}
 
 					.dropdown {
 						flex: 1;
@@ -501,6 +596,10 @@
 					padding-right: 10px; // prevents text cut-off near scrollbar
 					scrollbar-width: thin; // for Firefox
 					scrollbar-color: #c4c4c4 transparent; // scrollbar styling
+					@media (max-width: 767px) {
+						width: 100%;
+						padding-right: 0;
+					}
 				}
 
 
@@ -515,6 +614,9 @@
 						margin-bottom: 10px;
 						line-height: 140%; /* 28px */
 						font-family: var(--font_primary);
+						@media (max-width: 767px) {
+							font-size: 18px;
+						}
 					}
 
 					p {
@@ -524,6 +626,9 @@
 						font-weight: 400;
 						line-height: 140%; /* 22.4px */
 						margin-bottom: 10px;
+						@media (max-width: 767px) {
+							font-size: 14px;
+						}
 					}
 
 					hr {
@@ -545,16 +650,26 @@
 			border-radius: 20px;
 			background: #F47A7B;
 			padding: 60px 60px 150px 60px;
+			@media (max-width: 767px) {
+				flex-wrap: wrap;
+				padding: 40px 60px 100px 40px;
+			}
 			.title_moji{
 				width: 48%;
 				display: flex;
 				justify-content: space-between;
+				@media (max-width: 767px) {
+					width: 100%;
+				}
 			}
 			.faq_desc{
 				width: 48%;
 				display: flex;
 				flex-wrap: wrap;
 				justify-content: space-between;
+				@media (max-width: 767px) {
+					width: 100%;
+				}
 				p{
 					width: 100%;
 					color: #FFF;
@@ -563,6 +678,10 @@
 					font-weight: 400;
 					font-family: var(--font_primary);
 					line-height: 30px; /* 100% */
+					@media (max-width: 767px) {
+						font-size: 22px;
+						margin-bottom: 20px;
+					}
 				}
 			}
 		}
@@ -571,6 +690,9 @@
 		padding: 80px 0;
 		position: relative;
 		background-color: #FED433;
+		@media (max-width: 767px) {
+			padding: 60px 0;
+		}
 		&::after{
 			content: "";
 			position: absolute;
@@ -582,6 +704,11 @@
 			background-position: center;
 			background-repeat: no-repeat;
 			background-image: url(../../../public/img/home/connect_bg.png);
+			@media (max-width: 767px) {
+				height: 100px;
+				top: -45px;
+				background-size: contain;
+			}
 			@media (min-width: 1201px) and (max-width: 1680px) {
 				height: 210px;
 				top: -102px;
@@ -591,8 +718,14 @@
 			display: flex;
 			justify-content: space-between;
 			gap: 30px;
+			@media (max-width: 767px) {
+				flex-wrap: wrap;
+			}
 			.connect_info {
 				width: 42%;
+				@media (max-width: 767px) {
+					width: 100%;
+				}
 				ul{
 					padding-left: 0;
 					padding-top: 30px;
@@ -619,6 +752,9 @@
 			.connect_form {
 				width: 42%;
 				position: relative;
+				@media (max-width: 767px) {
+					width: 100%;
+				}
 				h2{
 					z-index: 2;
 					position: relative;

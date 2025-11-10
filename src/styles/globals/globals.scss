@@ -151,6 +151,10 @@ section {
 	position: relative;
 	text-transform: uppercase;
 	font-family: var(--font-braked-r);
+	@media (max-width: 767px) {
+		font-size: 50px;
+		line-height: 50px;
+	}
 }
 
 
@@ -163,6 +167,10 @@ section {
 	font-family: var(--font-braked-s-b);
 	span{
 		color: #2B8B00;
+	}
+	@media (max-width: 767px) {
+		font-size: 70px;
+		line-height: 60px;
 	}
 }
 
@@ -209,6 +217,10 @@ section {
 	left: 70%;
 	position: absolute;
 	transform: translate(-50%, -50%);
+	@media (max-width: 767px) {
+		top: -25%;
+		left: 45%;
+	}
 }
 
 .toTop {

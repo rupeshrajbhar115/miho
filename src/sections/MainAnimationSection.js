@@ -101,9 +101,20 @@ export default function MainAnimationSection() {
 	useEffect(() => {
 		gsap.registerPlugin(ScrollTrigger);
 		const winH = window.innerHeight;
+		const winW = window.innerWidth;
 		const animationTimeline = gsap.timeline();
 		const animationTimeline1 = gsap.timeline();
 		const bannerTimeline = gsap.timeline({});
+		let LeftBottleAnima = "32vw";
+		let AnimaCircle = "scale(5)";
+		let AnimaCircle1 = "scale(7)";
+		let RedWaveTop = "-88px";
+		if (window.innerWidth >= 0 && window.innerWidth <= 767) {
+			LeftBottleAnima = "220px";
+			AnimaCircle = "scale(9)";
+			AnimaCircle1 = "scale(12)";
+			RedWaveTop = "-22px";
+		}
 
 		bannerTimeline
 			.to(
@@ -185,6 +196,13 @@ export default function MainAnimationSection() {
 				},
 				{
 					cameraOrbit: "550deg 0 2m",
+				},
+				"1st"
+			)
+			.to(
+				".left_bottle_anima model-viewer",
+				{
+					width: LeftBottleAnima,
 				},
 				"1st"
 			)
@@ -468,7 +486,7 @@ export default function MainAnimationSection() {
 				`.${styles.AnimaCircle}`,
 				{
 					// duration: 2,
-					transform: "scale(5)",
+					transform: AnimaCircle,
 				},
 				"6th"
 			)
@@ -547,7 +565,7 @@ export default function MainAnimationSection() {
 			.to(
 				`.${styles.AnimaCircle}`,
 				{
-					transform: "scale(7)",
+					transform: AnimaCircle1,
 				},
 				"9th"
 			)
@@ -717,7 +735,7 @@ export default function MainAnimationSection() {
 				`.${styles.RedWaveTop}`,
 				{
 					delay: "0.6",
-					top: "-88px",
+					top: RedWaveTop,
 				},
 				"11th"
 			)
@@ -1185,11 +1203,6 @@ export default function MainAnimationSection() {
 						</div>
 						<div className={styles.desc_section_wrapper}>
 							<div className={styles.desc_section}>
-								{/* <div className={styles.para2}>
-									It&lsquo;s not about drinking hard; it&lsquo;s about living light —
-									it&lsquo;s all about shared laughs, fun games, late-night gossip, and
-									that one friend who always says just one more!
-								</div> */}
 								<div className={styles.para2}>Sip it, share it, shoot it</div>
 								<h2 className={`${styles.title_anima_circle} section_big_title`}>
 									<span>
@@ -1286,11 +1299,6 @@ export default function MainAnimationSection() {
 
 					<div className={styles.text_section}>
 						<div className={styles.title_animation}>
-							{/* <div className={styles.one}>
-								<h2 className="section_big_title">
-									<span>Indian-Made. </span>
-								</h2>
-							</div> */}
 							<div className={styles.two}>
 								<h2 className="section_big_title">
 									<span>K-Wave Inspired.</span>

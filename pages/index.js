@@ -224,6 +224,15 @@ export default function HomePage() {
 			delay: 2500,
 			disableOnInteraction: false,
 		},
+		// Responsive breakpoints
+		breakpoints: {
+			0: {
+				slidesPerView: 1, // Mobile
+			},
+			768: {
+				slidesPerView: 1, // Tablet & up
+			},
+		},
 	};
 	const mihopediaSettings = {
 		modules: [Navigation, Autoplay],
@@ -237,6 +246,15 @@ export default function HomePage() {
 		},
 		onBeforeInit: (swiper) => {
 			swiperRef2.current = swiper;
+		},
+		// Responsive breakpoints
+		breakpoints: {
+			0: {
+				slidesPerView: 1, // Mobile
+			},
+			768: {
+				slidesPerView: 2, // Tablet & up
+			},
 		},
 	};
 	const justSettings = {
@@ -263,6 +281,15 @@ export default function HomePage() {
 		onSlideChange: (swiper) => {
 			setCurrentSlide(swiper.realIndex + 1);
 		},
+		// Responsive breakpoints
+		breakpoints: {
+			0: {
+				slidesPerView: 1, // Mobile
+			},
+			768: {
+				slidesPerView: 2, // Tablet & up
+			},
+		},
 	};
 
 	return (
@@ -277,10 +304,6 @@ export default function HomePage() {
 			{/* Page Content starts here */}
 			<main className={`${styles.HomePage}`}>
 				<MainAnimationSection />
-				{/* <IndianMade /> */}
-				{/* <div id="taste">
-					<EveryFlavour />
-				</div> */}
 				<section className={`${styles.just_section}`}>
 					<img
 						src={GreenWaveTop.src}
@@ -587,7 +610,7 @@ export default function HomePage() {
 								</div>
 
 								{/* Thumbnail Slider */}
-								<div className={`${styles.small_slider}`}>
+								<div className={`${styles.small_slider} hidden_xs`}>
 									<Swiper {...thumbsSwiperSettings}>
 										<SwiperSlide>
 											<div className={`${styles.img_item}`}>

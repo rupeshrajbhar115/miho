@@ -7,6 +7,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media (max-width: 767px) {
+      flex-wrap: wrap;
+      grid-gap: 6px;
+    }
     p{
       color: var(--Orange-100, #FFF5E5);
       font-size: 14px;
@@ -22,6 +26,7 @@
       line-height: normal;
       font-family: var(--font_primary);
       color: var(--Orange-100, #FFF5E5);
+      
     }
     .social_media{
       ul{

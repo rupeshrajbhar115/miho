@@ -6,6 +6,9 @@
         height: 100vh;
         padding: 130px 4vw 100px 4vw;
         position: relative;
+        @media (max-width: 767px) {
+            padding: 100px 15px 15px 15px;
+        }
         /* Keyframes */
         @keyframes moveRight {
             0% {
@@ -45,6 +48,10 @@
             position: absolute;
             transform: scale(0);
             animation: moveTop 2s ease-in-out infinite alternate;
+            @media (max-width: 767px) {
+                top: 60%;
+                width: 100px;
+            }
         }
         &::after{
             content: "";
@@ -66,11 +73,20 @@
             width: 100%;
             bottom: -50px;
             position: absolute;
+            @media (max-width: 767px) {
+                bottom: -15px;
+            }
         }
         .banner{
             display: flex;
+            @media (max-width: 767px) {
+                flex-wrap: wrap;
+            }
             .left_section{
                 width: 55%;
+                @media (max-width: 767px) {
+                    width: 100%;
+                }
                 .banner_title{
                     overflow: hidden;
                     h2{
@@ -81,6 +97,10 @@
                         line-height: 145px;
                         transform: translateY(100%);
                         font-family: var(--font-braked-s-b);
+                        @media (max-width: 767px) {
+                            font-size: 80px;
+                            line-height: 80px;
+                        }
                     }
                 }
                 .banner_desc{
@@ -93,6 +113,11 @@
                         color: #236F00;
                         padding-top: 10px;
                         transform: translateY(100%);
+                        @media (max-width: 767px) {
+                            width: 100%;
+                            font-size: 28px;
+                            line-height: 30px;
+                        }
                     }
                 }
             }
@@ -100,6 +125,9 @@
                 width: 45%;
                 height: calc(100vh - 230px);
                 position: relative;
+                @media (max-width: 767px) {
+                    width: 100%;
+                }
                 .BannerLeaf{
                     top: 10%;
                     left: 0%;
@@ -114,6 +142,7 @@
                     position: absolute;
                     transform: translateY(-50%) scale(0);
                     animation: moveTop 2s ease-in-out infinite alternate;
+                    
                 }
                 .bannerVector2{
                     left: -210px;
@@ -121,6 +150,11 @@
                     position: absolute;
                     transform: scale(0);
                     animation: moveRight 2s ease-in-out infinite alternate;
+                    @media (max-width: 767px) {
+                        left: -50px;
+                        width: 100px;
+                        bottom: 200px;
+                    }
                 }
                 .bannerVector3{
                     right: -80px;
@@ -128,6 +162,11 @@
                     position: absolute;
                     transform: scale(0);
                     animation: moveRight 2s ease-in-out infinite alternate;
+                    @media (max-width: 767px) {
+                        right: 0px;
+                        width: 100px;
+                        bottom: 200px;
+                    }
                 }
                 .bottle{
                     position: relative;
@@ -142,6 +181,9 @@
                             display: block;
                             overflow: hidden;
                             pointer-events: auto;
+                            @media (max-width: 767px) {
+                                width: 180px;
+                            }
                         }
                     }
                     .RedBottle{
@@ -159,15 +201,22 @@
                         top: -20px;
                         position: absolute;
                         transform: rotate(35deg);
+                        @media (max-width: 767px) {
+                            right: 10px;
+                            top: -70px;
+                        }
                         model-viewer{
                             // position: absolute;
-                            width: 30vw;
-                            height: 75vh;
+                            width: 32vw;
+                            height: 78vh;
                             z-index: 1;
                             transform: rotate(-15deg);
                             display: block;
                             overflow: hidden;
                             pointer-events: auto;
+                            @media (max-width: 767px) {
+                                width: 180px;
+                            }
                         }
                         @media (min-width: 1441px) and (max-width: 1920px) {
                             top: 0;
@@ -226,6 +275,9 @@
                     display: block;
                     overflow: hidden;
                     pointer-events: auto;
+                    @media (max-width: 767px) {
+                        width: 180px;
+                    }
                 }
             }
             .RedBottle{
@@ -326,6 +378,9 @@
                 display: block;
                 overflow: hidden;
                 pointer-events: auto;
+                @media (max-width: 767px) {
+                    width: 220px;
+                }
             }
         }
         .circle_anima{
@@ -356,6 +411,10 @@
                 z-index: 1;
                 position: absolute;
                 transform: translateY(-50%);
+                @media (max-width: 767px) {
+                    width: 250px;
+                    display: none;
+                }
             }
             .RightHeand{
                 top: 50%;
@@ -363,6 +422,10 @@
                 right: -55%;
                 position: absolute;
                 transform: translateY(-50%); 
+                @media (max-width: 767px) {
+                    width: 250px;
+                    display: none;
+                }
             } 
         }
         .heandTextAnima{
@@ -376,6 +439,9 @@
             align-items: center;
             justify-content: center;
             transform: translate(-50%, -50%);
+            @media (max-width: 767px) {
+                padding: 0 15px;
+            }
             .text_section{
                 width: 600px;
                 .desc{
@@ -386,6 +452,10 @@
                     text-align: center;
                     overflow: hidden;
                     position: relative;
+                    @media (max-width: 767px) {
+                       font-size: 20px;
+                       line-height: 28px;
+                    }
                     .para{
                         position: relative;
                         transform: translateY(-100%);
@@ -397,6 +467,9 @@
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
+                    @media (max-width: 767px) {
+                        width: 100%;
+                    }
                     .desc_section{
                         text-align: center;
                         transform: translateY(100%);
@@ -450,12 +523,18 @@
             top: 0;
             padding: 80px 0 0;
             position: absolute;
+            @media (max-width: 767px) {
+                // height: 100vh;
+            }
             .LeftLine{
                 opacity: 0;
                 top: 100px;
                 left: -50px;
                 position: absolute;
                 animation: moveRight 2s ease-in-out infinite alternate;
+                @media (max-width: 767px) {
+                   width: 100px;
+                }
             }
             .CenterLine{
                 top: 50%;
@@ -464,6 +543,11 @@
                 position: absolute; 
                 transform: translate(-50%, -50%);
                 animation: moveRight 2s ease-in-out infinite alternate;
+                @media (max-width: 767px) {
+                    width: 80px;
+                    left: 0;
+                    top: 60%;
+                }
             }
             .RightLine{
                 top: 35%;
@@ -473,6 +557,11 @@
                 position: absolute; 
                 transform: translateY(-50%);
                 animation: moveRight 2s ease-in-out infinite alternate;
+                @media (max-width: 767px) {
+                    width: 100px;
+                    right: 100px;
+                    top: 65%;
+                }
             }
             .Leaf{
                 opacity: 0;
@@ -480,6 +569,9 @@
                 z-index: 1;
                 right: -50px;
                 position: absolute; 
+                @media (max-width: 767px) {
+                    width: 200px;
+                }
             }
             .Mood{
                 right: 12%;
@@ -488,6 +580,10 @@
                 position: absolute;
                 transform: translateX(-50%) scale(0);
                 animation: moveScale 2s ease-in-out infinite alternate;
+                @media (max-width: 767px) {
+                    width: 80px;
+                    top: 120px;
+                }
             }
             .Flovare1{
                 top: 150px;
@@ -504,6 +600,9 @@
                 position: absolute;
                 transform: translate(-50%, -50%) scale(0);
                 animation: moveScale 2s ease-in-out infinite alternate;
+                @media (max-width: 767px) {
+                    top: 55%;
+                }
             }
             .Flovare3{
                 top: 48%;
@@ -512,6 +611,9 @@
                 position: absolute;
                 transform: translate(-50%, -50%) scale(0);
                 animation: moveScale 2s ease-in-out infinite alternate;
+                @media (max-width: 767px) {
+                    top: 60%;
+                }
             }
             .Flovare4{
                 top: 80px;
@@ -523,8 +625,14 @@
                 animation: moveScale 2s ease-in-out infinite alternate;
             }
             .text_section{
+                @media (max-width: 767px) {
+                    height: 100vh;
+                }
                 .title_animation{
                     text-align: center;
+                    @media (max-width: 767px) {
+                        margin-top: 150px;
+                    }
                     .one{
                         overflow: hidden;
                         h2{
@@ -545,6 +653,9 @@
                     }
                     h2{
                         line-height: 110px;
+                        @media (max-width: 767px) {
+                            line-height: 60px;
+                        }
                     }
                     .para_data{
                         width: 65%;
@@ -558,6 +669,13 @@
                         letter-spacing: -0.52px;
                         padding-top: 60px;
                         overflow: hidden;
+                        @media (max-width: 767px) {
+                            width: 100%;
+                            padding: 0 15px;
+                            font-size: 20px;
+                            line-height: 24px;
+                            margin-top: 10px;
+                        }
                         p{
                             transform: translateY(100%);
                             .br_padd{
@@ -604,14 +722,27 @@
                     height: 200px;
                     padding-top: 60px;
                     overflow: hidden;
+                    @media (max-width: 767px) {
+                        height: 350px;
+                    }
                     .text_section_flavour_inner{
                         transform: translateY(110%);
+                         @media (max-width: 767px) {
+                           transform: translateY(180%);
+                        }
                         .text_animation{
                             display: flex;
                             align-items: center;
                             justify-content: center;
+                            @media (max-width: 767px) {
+                                flex-wrap: wrap;
+                                grid-row-gap: 25px;
+                            }
                             .text_animation_inner{
                                 position: relative;
+                                @media (max-width: 767px) {
+                                    width: 50px;
+                                }
                                 .love1{
                                     top: -10px;
                                     left: 50%;
@@ -742,6 +873,9 @@
                             z-index: 1;
                             position: absolute;
                             transform: translate(-50%, -50%);
+                            @media (max-width: 767px) {
+                                width: 180px;
+                            }
                         }
                         .RedBottleAnima{
                             clip-path: polygon(0 0, 80% 0, 100% 99%, 20% 99%);
@@ -765,6 +899,9 @@
                         z-index: 1;
                         position: absolute;
                         transform: translateY(-50%);
+                        @media (max-width: 767px) {
+                            width: 50px;
+                        }
                     }
                     .RedVector2{
                         top: -15%;
@@ -772,6 +909,9 @@
                         z-index: 1;
                         position: absolute;
                         transform: translate(-50%, -50%);
+                        @media (max-width: 767px) {
+                            width: 120px;
+                        }
                     }
                     .RedVector3{
                         bottom: 100%;
@@ -779,6 +919,9 @@
                         z-index: 1;
                         position: absolute;
                         transform: translate(-50%, -50%);
+                        @media (max-width: 767px) {
+                            width: 80px;
+                        }
                     }
                     .RedVector4{
                         bottom: 100%;
@@ -786,6 +929,9 @@
                         z-index: 1;
                         position: absolute;
                         transform: translate(-50%, -50%);
+                        @media (max-width: 767px) {
+                            width: 80px;
+                        }
                     }
                     .RedVector5{
                         top: -10%;
@@ -793,6 +939,9 @@
                         z-index: 1;
                         position: absolute;
                         transform: translate(-50%, -50%);
+                        @media (max-width: 767px) {
+                            width: 80px;
+                        }
                     }
                     .RedVector6{
                         right: 0;
@@ -800,6 +949,9 @@
                         z-index: 1;
                         position: absolute;
                         transform: translateY(-50%);
+                        @media (max-width: 767px) {
+                            width: 80px;
+                        }
                     }
                     .GreenVector11{
                         top: -10%;
@@ -807,6 +959,9 @@
                         z-index: 1;
                         position: absolute;
                         transform: translateY(-50%);
+                        @media (max-width: 767px) {
+                            width: 50px;
+                        }
                     }
                     .GreenVector21{
                         top: -15%;
@@ -821,6 +976,9 @@
                         z-index: 1;
                         position: absolute;
                         transform: translate(-50%, -50%);
+                        @media (max-width: 767px) {
+                            width: 120px;
+                        }
                     }
                     .GreenVector41{
                         bottom: 100%;
@@ -828,6 +986,9 @@
                         z-index: 1;
                         position: absolute;
                         transform: translate(-50%, -50%);
+                        @media (max-width: 767px) {
+                            width: 80px;
+                        }
                     }
                     .GreenVector51{
                         top: -10%;
@@ -835,6 +996,9 @@
                         z-index: 1;
                         position: absolute;
                         transform: translate(-50%, -50%);
+                        @media (max-width: 767px) {
+                            width: 80px;
+                        }
                     }
                     .GreenVector61{
                         right: 0;
@@ -842,6 +1006,9 @@
                         bottom: 100%;
                         position: absolute;
                         transform: translateY(-50%);
+                        @media (max-width: 767px) {
+                            width: 80px;
+                        }
                     }
                 }
                 .flavour_section_2{
