@@ -109,11 +109,19 @@ export default function MainAnimationSection() {
 		let AnimaCircle = "scale(5)";
 		let AnimaCircle1 = "scale(7)";
 		let RedWaveTop = "-88px";
+		let LeftHeand = "0";
+		let RightHeand = "0";
+		let LeftHeand1 = "-25%";
+		let RightHeand1 = "-25%";
 		if (window.innerWidth >= 0 && window.innerWidth <= 767) {
 			LeftBottleAnima = "140px";
 			AnimaCircle = "scale(9)";
 			AnimaCircle1 = "scale(12)";
 			RedWaveTop = "-22px";
+			LeftHeand = "-7%";
+			RightHeand = "-7%";
+			LeftHeand1 = "-70%";
+			RightHeand1 = "-70%";
 		}
 
 		bannerTimeline
@@ -495,7 +503,7 @@ export default function MainAnimationSection() {
 				`.${styles.LeftHeand}`,
 				{
 					duration: 1,
-					left: "0",
+					left: LeftHeand,
 				},
 				"6th"
 			)
@@ -503,7 +511,7 @@ export default function MainAnimationSection() {
 				`.${styles.RightHeand}`,
 				{
 					duration: 1,
-					right: "0",
+					right: RightHeand,
 				},
 				"6th"
 			)
@@ -511,7 +519,7 @@ export default function MainAnimationSection() {
 				`.${styles.LeftHeand}`,
 				{
 					duration: 1,
-					left: "-25%",
+					left: LeftHeand1,
 				},
 				"7th"
 			)
@@ -519,7 +527,7 @@ export default function MainAnimationSection() {
 				`.${styles.RightHeand}`,
 				{
 					duration: 1,
-					right: "-25%",
+					right: RightHeand1,
 				},
 				"7th"
 			)

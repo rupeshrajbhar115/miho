@@ -413,7 +413,8 @@
                 transform: translateY(-50%);
                 @media (max-width: 767px) {
                     width: 250px;
-                    display: none;
+                    // display: none;
+                    left: -70%;
                 }
             }
             .RightHeand{
@@ -424,7 +425,8 @@
                 transform: translateY(-50%); 
                 @media (max-width: 767px) {
                     width: 250px;
-                    display: none;
+                    // display: none;
+                    right: -70%;
                 }
             } 
         }
