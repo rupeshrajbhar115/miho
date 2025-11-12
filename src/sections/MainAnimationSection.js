@@ -1388,7 +1388,10 @@ export default function MainAnimationSection() {
 										/>
 									</div>
 								</div>
-								<h6>Soft on the senses. Big on personality.</h6>
+								<h6>
+									Soft on the senses.
+									<br className="hidden_xs" /> Big on personality.
+								</h6>
 							</div>
 						</div>
 					</div>

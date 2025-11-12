@@ -223,6 +223,13 @@ section {
 	}
 }
 
+.hidden_xs{
+	display: block;
+	@media (min-width: 768px) {
+		display: none;
+	}
+}
+
 .toTop {
 	&[data-scroll] {
 		transition: all 1s ease-out;
