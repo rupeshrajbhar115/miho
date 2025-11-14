@@ -11,8 +11,10 @@
 		@extend %f_r_a_center;
 		justify-content: space-between;
 		.image_wrap {
+			z-index: 1;
 			padding: 10px 0;
 			max-width: 120px;
+			position: relative;
 			@extend %f_r_a_center;
 		}
 		.links_wrap {
@@ -23,18 +25,20 @@
 			background-color: #fff;
 			// The menu is transformed as per sidebar on click of hamburger icon
 			@include sm-down {
-				padding-top: 5%;
+				padding-top: 18%;
 				background-color: var(--color_white);
 				transition: ease all 300ms;
 				transform: translateX(-100%);
 				flex-direction: column;
 				width: 100%;
 				position: absolute;
-				top: 100%;
+				top: -5px;
 				left: 0;
 				height: 100vh;
+				border-radius: 0;
 			}
 			.links {
+				display: block;
 				cursor: pointer;
 				transition: all 0.3s ease;
 				}
@@ -57,6 +61,10 @@
 				height: 2px;
 				background: #e67e22;
 				border-radius: 2px;
+					@media (max-width: 767px) {
+						bottom: 0;
+						height: inherit;
+					}
 				}
 
 
@@ -67,7 +75,7 @@
 				cursor: pointer;
 				padding: 0 15px;
 				@include sm-down {
-					padding: 15px;
+					padding: 8px 0;
 					flex-direction: column;
 					align-items: stretch;
 				}
@@ -82,6 +90,9 @@
 					font-family: var(--font_primary);
 					@extend %f_r_a_center;
 					justify-content: space-between;
+					@include sm-down {
+						font-size: 20px;
+					}
 				}
 
 				// Dropdown on links
