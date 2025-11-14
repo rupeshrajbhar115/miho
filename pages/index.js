@@ -754,17 +754,17 @@ export default function HomePage() {
 										</a>
 									</li>
 									<li>
-										<a href="mailto:info@miho">
+										<a href="mailto:Cheers@umagobeverages.com">
 											<img src={Mail.src} alt="location" className="img-responsive" />
-											info@miho
+											Cheers@umagobeverages.com
 										</a>
 									</li>
-									<li>
+									{/* <li>
 										<a href="tel:+91704006112">
 											<img src={Call.src} alt="location" className="img-responsive" /> +91
 											(0) 70 400 61 12
 										</a>
-									</li>
+									</li> */}
 								</ul>
 							</div>
 							<div className={`${styles.connect_form} toTop`} data-scroll>

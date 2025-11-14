@@ -367,7 +367,7 @@
         .GreenBottleAnimationNew{
             top: 53.5%;
             left: 50%;
-            display: none;
+            opacity: 0;
             position: absolute;
             transform: translate(-50%, -50%) rotate(15deg);
             model-viewer{

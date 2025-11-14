@@ -345,7 +345,7 @@ export default function MainAnimationSection() {
 			.to(
 				".GreenBottleAnimationNew",
 				{
-					display: "block",
+					opacity: "1",
 				},
 				"2nd"
 			)

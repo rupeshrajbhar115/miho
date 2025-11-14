@@ -33,6 +33,7 @@ import Logo from "@/../public/img/logo.svg";
 export default function Header() {
 	const [openSidebar, setOpenSidebar] = useState(false);
 	const [openDropdown, setOpenDropdown] = useState(null);
+	const [activeLink, setActiveLink] = useState("home");
 
 	/** Open sidebar on click of hamburger */
 	const toggleSidebar = () => {
@@ -62,90 +63,135 @@ export default function Header() {
 					</Link>
 
 					{/* Links Wrap */}
-					<div className={`${styles.links_wrap}`}>
-						<div className={styles.links}>
+					<div className={styles.links_wrap}>
+						{/* HOME */}
+						<div
+							className={`${styles.links} ${
+								activeLink === "home" ? styles.active : ""
+							}`}
+						>
 							<ScrollSection
-								onClick={toggleSidebar}
+								onClick={() => {
+									setActiveLink("home");
+									toggleSidebar();
+								}}
 								activeClass={styles.active}
 								to="home"
 								spy={true}
 								smooth={true}
 								offset={-10}
 								duration={500}
-								className={`${styles.link_title}`}
+								className={styles.link_title}
 							>
 								<div className={styles.link_title}>Home</div>
 							</ScrollSection>
-							{/* <Link href="">
-								<div className={`${styles.link_title} ${styles.active}`}>Home</div>
-							</Link> */}
 						</div>
-						<div className={styles.links}>
+
+						{/* ABOUT MIHO */}
+						<div
+							className={`${styles.links} ${
+								activeLink === "about" ? styles.active : ""
+							}`}
+						>
 							<ScrollSection
-								onClick={toggleSidebar}
-								activeClass="active"
+								onClick={() => {
+									setActiveLink("about");
+									toggleSidebar();
+								}}
 								to="about"
 								spy={true}
 								smooth={true}
 								offset={-10}
 								duration={500}
-								className={`${styles.link_title}`}
+								className={styles.link_title}
 							>
 								<div className={styles.link_title}>About Miho</div>
 							</ScrollSection>
 						</div>
-						<div className={styles.links}>
+
+						{/* TASTE */}
+						<div
+							className={`${styles.links} ${
+								activeLink === "taste" ? styles.active : ""
+							}`}
+						>
 							<ScrollSection
-								onClick={toggleSidebar}
-								activeClass="active"
+								onClick={() => {
+									setActiveLink("taste");
+									toggleSidebar();
+								}}
 								to="taste"
 								spy={true}
 								smooth={true}
 								offset={20}
 								duration={500}
-								className={`${styles.link_title}`}
+								className={styles.link_title}
 							>
 								<div className={styles.link_title}>Taste</div>
 							</ScrollSection>
 						</div>
-						<div className={styles.links}>
+
+						{/* MIHOPEDIA */}
+						<div
+							className={`${styles.links} ${
+								activeLink === "mihopedia" ? styles.active : ""
+							}`}
+						>
 							<ScrollSection
-								onClick={toggleSidebar}
-								activeClass="active"
+								onClick={() => {
+									setActiveLink("mihopedia");
+									toggleSidebar();
+								}}
 								to="mihopedia"
 								spy={true}
 								smooth={true}
 								offset={20}
 								duration={500}
-								className={`${styles.link_title}`}
+								className={styles.link_title}
 							>
 								<div className={styles.link_title}>Mihopedia</div>
 							</ScrollSection>
 						</div>
-						<div className={styles.links}>
+
+						{/* EVENTS */}
+						<div
+							className={`${styles.links} ${
+								activeLink === "events" ? styles.active : ""
+							}`}
+						>
 							<ScrollSection
-								onClick={toggleSidebar}
-								activeClass="active"
+								onClick={() => {
+									setActiveLink("events");
+									toggleSidebar();
+								}}
 								to="events"
 								spy={true}
 								smooth={true}
 								offset={-200}
 								duration={500}
-								className={`${styles.link_title}`}
+								className={styles.link_title}
 							>
 								<div className={styles.link_title}>Events</div>
 							</ScrollSection>
 						</div>
-						<div className={styles.links}>
+
+						{/* STORE LOCATOR */}
+						<div
+							className={`${styles.links} ${
+								activeLink === "store" ? styles.active : ""
+							}`}
+						>
 							<ScrollSection
-								onClick={toggleSidebar}
-								activeClass="active"
+								onClick={() => {
+									setActiveLink("store");
+									toggleSidebar();
+								}}
 								to="store"
 								spy={true}
 								smooth={true}
 								offset={0}
 								duration={500}
-								className={`${styles.link_title}`}
+								className={styles.link_title}
 							>
 								<div className={styles.link_title}>Store Locator</div>
 							</ScrollSection>
