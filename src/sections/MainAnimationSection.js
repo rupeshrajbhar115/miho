@@ -980,7 +980,7 @@ export default function MainAnimationSection() {
 		ScrollTrigger.create({
 			trigger: `.${styles.bottle_anima_section}`,
 			start: "top top",
-			end: "+=" + winH * 4,
+			end: "+=" + winH * 6,
 			animation: animationTimeline1,
 			scrub: true,
 			pin: true,
@@ -1390,7 +1390,7 @@ export default function MainAnimationSection() {
 								</div>
 								<h6>
 									Soft on the senses.
-									<br className="hidden_xs" /> Big on personality.
+									<br className="hidden_xs_mobile" /> Big on personality.
 								</h6>
 							</div>
 						</div>
