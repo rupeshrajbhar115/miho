@@ -107,7 +107,7 @@ export default function MainAnimationSection() {
 		const bannerTimeline = gsap.timeline({});
 		let LeftBottleAnima = "32vw";
 		let AnimaCircle = "scale(5)";
-		let AnimaCircle1 = "scale(7)";
+		let AnimaCircle1 = "scale(8)";
 		let RedWaveTop = "-88px";
 		let LeftHeand = "0";
 		let RightHeand = "0";

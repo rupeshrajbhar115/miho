@@ -39,7 +39,7 @@ import Loaction from "../public/img/loaction.svg";
 import Call from "../public/img/call.svg";
 import Mail from "../public/img/mail.svg";
 import Moji from "../public/img/home/moji.png";
-import FindImage from "../public/img/home/find_img.jpg";
+import FindImage from "../public/img/home/find_img.png";
 import MihoSliderImg1 from "../public/img/home/mihoSlider1.jpg";
 import MihoSliderImg2 from "../public/img/home/mihoSlider2.jpg";
 import MihoArrow from "../public/img/home/mihoArrow.svg";
@@ -726,7 +726,7 @@ export default function HomePage() {
 						<div className={`${styles.faq_items} toTop`} data-scroll>
 							<div className={styles.title_moji}>
 								<div className={styles.title}>
-									<h2 className="section_big_title">Faq’s</h2>
+									<h2 className="section_big_title">MIHOw</h2>
 								</div>
 								<div className={styles.title_moji}>
 									<img src={Moji.src} alt="moji" className="img-responsive" />

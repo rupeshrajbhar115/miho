@@ -590,7 +590,7 @@
 					margin-top: 40px;
 					width: 90%;
 					max-width: 600px;
-					height: 435px;
+					height: 540px;
 					overflow-y: auto; // ✅ smoother internal scrolling
 					overflow-x: hidden;
 					padding-right: 10px; // prevents text cut-off near scrollbar
@@ -660,6 +660,9 @@
 				justify-content: space-between;
 				@media (max-width: 767px) {
 					width: 100%;
+				}
+				h2{
+					font-weight: 100;
 				}
 			}
 			.faq_desc{
